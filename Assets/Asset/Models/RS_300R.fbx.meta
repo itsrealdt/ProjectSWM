@@ -1,0 +1,218 @@
+fileFormatVersion: 2
+guid: a9745f1171edb2e449ed68e761b5726e
+timeCreated: 1507208643
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: BezierCurve
+    100002: BikeChassis.001
+    100004: BikeChassis.002
+    100006: BikeChassis.003
+    100008: BikeChassis.004
+    100010: BikeLights.001
+    100012: BikeLights.002
+    100014: BikeTires.001
+    100016: Camera
+    100018: Circle
+    100020: Circle.002
+    100022: Cube
+    100024: Cube.001
+    100026: Cube.002
+    100028: Lamp
+    100030: Plane
+    100032: Plane.001
+    100034: Plane.002
+    100036: Plane.003
+    100038: Plane.004
+    100040: Plane.005
+    100042: Plane.006
+    100044: Plane.007
+    100046: Plane.008
+    100048: Plane.009
+    100050: Plane.010
+    100052: Plane.011
+    100054: Point
+    100056: //RootNode
+    400000: BezierCurve
+    400002: BikeChassis.001
+    400004: BikeChassis.002
+    400006: BikeChassis.003
+    400008: BikeChassis.004
+    400010: BikeLights.001
+    400012: BikeLights.002
+    400014: BikeTires.001
+    400016: Camera
+    400018: Circle
+    400020: Circle.002
+    400022: Cube
+    400024: Cube.001
+    400026: Cube.002
+    400028: Lamp
+    400030: Plane
+    400032: Plane.001
+    400034: Plane.002
+    400036: Plane.003
+    400038: Plane.004
+    400040: Plane.005
+    400042: Plane.006
+    400044: Plane.007
+    400046: Plane.008
+    400048: Plane.009
+    400050: Plane.010
+    400052: Plane.011
+    400054: Point
+    400056: //RootNode
+    2000000: Camera
+    2300000: BezierCurve
+    2300002: BikeChassis.001
+    2300004: BikeChassis.002
+    2300006: BikeChassis.003
+    2300008: BikeChassis.004
+    2300010: BikeLights.001
+    2300012: BikeLights.002
+    2300014: BikeTires.001
+    2300016: Circle
+    2300018: Circle.002
+    2300020: Cube
+    2300022: Cube.001
+    2300024: Cube.002
+    2300026: Plane
+    2300028: Plane.001
+    2300030: Plane.002
+    2300032: Plane.003
+    2300034: Plane.004
+    2300036: Plane.005
+    2300038: Plane.006
+    2300040: Plane.007
+    2300042: Plane.008
+    2300044: Plane.009
+    2300046: Plane.010
+    2300048: Plane.011
+    3300000: BezierCurve
+    3300002: BikeChassis.001
+    3300004: BikeChassis.002
+    3300006: BikeChassis.003
+    3300008: BikeChassis.004
+    3300010: BikeLights.001
+    3300012: BikeLights.002
+    3300014: BikeTires.001
+    3300016: Circle
+    3300018: Circle.002
+    3300020: Cube
+    3300022: Cube.001
+    3300024: Cube.002
+    3300026: Plane
+    3300028: Plane.001
+    3300030: Plane.002
+    3300032: Plane.003
+    3300034: Plane.004
+    3300036: Plane.005
+    3300038: Plane.006
+    3300040: Plane.007
+    3300042: Plane.008
+    3300044: Plane.009
+    3300046: Plane.010
+    3300048: Plane.011
+    4300000: Plane.010
+    4300002: Circle.002
+    4300004: Plane.009
+    4300006: BezierCurve
+    4300008: Plane.008
+    4300010: Circle
+    4300012: Plane.007
+    4300014: Plane.006
+    4300016: Plane.005
+    4300018: Plane.004
+    4300020: Cube.001
+    4300022: Plane.002
+    4300024: Plane
+    4300026: Plane.001
+    4300028: Cube.002
+    4300030: BikeLights.002
+    4300032: BikeChassis.004
+    4300034: BikeChassis.003
+    4300036: BikeChassis.002
+    4300038: BikeLights.001
+    4300040: BikeTires.001
+    4300042: BikeChassis.001
+    4300044: Cube
+    4300046: Plane.003
+    4300048: Plane.011
+    10800000: Lamp
+    10800002: Point
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
