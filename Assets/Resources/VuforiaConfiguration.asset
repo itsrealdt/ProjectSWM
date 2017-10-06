@@ -44,8 +44,10 @@ MonoBehaviour:
       ContainsMagnet: 0
   databaseLoad:
     dataSetsToLoad:
+    - Project_SWM
     - Image_Target
     dataSetsToActivate:
+    - Project_SWM
     - Image_Target
   videoBackground:
     clippingMode: 0
