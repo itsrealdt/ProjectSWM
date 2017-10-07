@@ -44,9 +44,11 @@ MonoBehaviour:
       ContainsMagnet: 0
   databaseLoad:
     dataSetsToLoad:
+    - Project_SWM_3DTarget_OT
     - Project_SWM
     - Image_Target
     dataSetsToActivate:
+    - Project_SWM_3DTarget_OT
     - Project_SWM
     - Image_Target
   videoBackground:

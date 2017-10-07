@@ -70,6 +70,7 @@ namespace Vuforia
         {
             Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
             Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
+            //CameraDevice.Instance.SetFlashTorchMode(true); //inserito il comando di attivazione del flash
 
             // Enable rendering:
             foreach (Renderer component in rendererComponents)
@@ -91,6 +92,7 @@ namespace Vuforia
         {
             Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
             Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
+            //CameraDevice.Instance.SetFlashTorchMode (true); //inserito il comando di attivazione del flash
 
             // Disable rendering:
             foreach (Renderer component in rendererComponents)
