@@ -4,27 +4,30 @@ using UnityEngine;
 
 public class MovePanel : MonoBehaviour
 {
-    private RectTransform initialPos;
+    private Animator animPanel;
 
     private void Awake()
     {
-        initialPos = this.GetComponent<RectTransform>();
+        animPanel = this.GetComponent<Animator>();
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R)) //&& animPanel.GetFloat("SpeedParam") != 1)
         {
-            StartCoroutine(MovePanelCO());   
+            Debug.Log("Premuto R e dovrebbe partire animation");
+            animPanel.SetTrigger("ForwardTrigger");
+        }
+        if (Input.GetKeyDown(KeyCode.S)) //&& animPanel.GetFloat("SpeedParam") != -1)
+        {
+            Debug.Log("Premuto S e dovrebbe tornare indietro");
+            animPanel.SetTrigger("BackwardTrigger");
         }
     }
 
-    private IEnumerator MovePanelCO()
+    public void MovePanelMeth(string _trigger)
     {
-        while (true)
-        {
-            this.GetComponent<RectTransform>().position -= new Vector3(100, 0, 0);
-            yield return null;
-        }
+        Debug.Log("Premuto R e dovrebbe partire animation");
+        animPanel.SetTrigger(_trigger);
     }
 }
