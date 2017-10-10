@@ -5,6 +5,7 @@ Confidential and Proprietary - Protected under copyright and other laws.
 ==============================================================================*/
 
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Vuforia
 {
@@ -92,7 +93,10 @@ namespace Vuforia
         {
             Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
             Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
+            //PilotEnabler pilotElements = FindObjectOfType<PilotEnabler>();
             //CameraDevice.Instance.SetFlashTorchMode (true); //inserito il comando di attivazione del flash
+
+            //pilotElements.OnThisTrackingLost();
 
             // Disable rendering:
             foreach (Renderer component in rendererComponents)
