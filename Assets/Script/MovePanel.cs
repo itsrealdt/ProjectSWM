@@ -4,30 +4,38 @@ using UnityEngine;
 
 public class MovePanel : MonoBehaviour
 {
-    private Animator animPanel;
+    private Vector3 initialPos = Vector3.zero;
+    private Vector3 originalPos;
+    public float speedMove = 25f;
 
-    private void Awake()
+    public void MovePanelMeth(GameObject _go)
     {
-        animPanel = this.GetComponent<Animator>();
+        // Prendo qui la posizione originale dell'oggetto in modo da porterlo poi
+        // far tornare in posizione con ReturnInPosition
+        originalPos = _go.GetComponent<RectTransform>().localPosition;
+        StartCoroutine(MovePanelCO(_go));
     }
 
-    private void Update()
+    private IEnumerator MovePanelCO(GameObject _go)
     {
-        if (Input.GetKeyDown(KeyCode.R)) //&& animPanel.GetFloat("SpeedParam") != 1)
+        while (_go.GetComponent<RectTransform>().localPosition != initialPos)
         {
-            Debug.Log("Premuto R e dovrebbe partire animation");
-            animPanel.SetTrigger("ForwardTrigger");
-        }
-        if (Input.GetKeyDown(KeyCode.S)) //&& animPanel.GetFloat("SpeedParam") != -1)
-        {
-            Debug.Log("Premuto S e dovrebbe tornare indietro");
-            animPanel.SetTrigger("BackwardTrigger");
+            _go.GetComponent<RectTransform>().localPosition = Vector3.MoveTowards(_go.GetComponent<RectTransform>().localPosition, initialPos, speedMove);
+            yield return null;
         }
     }
 
-    public void MovePanelMeth(string _trigger)
+    public void ReturnInPosition(GameObject _go)
     {
-        Debug.Log("Premuto R e dovrebbe partire animation");
-        animPanel.SetTrigger(_trigger);
+        StartCoroutine(ReturnPanelCO(_go));
+    }
+
+    private IEnumerator ReturnPanelCO(GameObject _go)
+    {
+        while (_go.GetComponent<RectTransform>().localPosition != originalPos)
+        {
+            _go.GetComponent<RectTransform>().localPosition = Vector3.MoveTowards(_go.GetComponent<RectTransform>().localPosition, originalPos, speedMove);
+            yield return null;
+        }
     }
 }
