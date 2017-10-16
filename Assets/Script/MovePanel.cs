@@ -7,7 +7,7 @@ public class MovePanel : MonoBehaviour
     private Vector3 initialPos = Vector3.zero;
     private Vector3 originalPos;
     public float speedMove = 25f;
-    public bool isMoving;
+    private bool isMoving;
 
     public void MovePanelMeth(GameObject _go)
     {

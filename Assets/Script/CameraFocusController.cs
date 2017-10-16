@@ -2,8 +2,8 @@
 using System.Collections;
 using Vuforia;
 
-public class CameraFocusController : MonoBehaviour {
-
+public class CameraFocusController : MonoBehaviour
+{
     private bool vuforiaStarted = false;
 
     void Start () 
@@ -23,24 +23,17 @@ public class CameraFocusController : MonoBehaviour {
     void OnApplicationPause(bool pause)
     {
         if (!pause)
-        {
-            
+        {           
             if (vuforiaStarted)
-            {
-                SetAutofocus(); 
-            }
+               SetAutofocus();
         }
     }
 
     private void SetAutofocus()
     {
         if (CameraDevice.Instance.SetFocusMode(CameraDevice.FocusMode.FOCUS_MODE_CONTINUOUSAUTO))
-        {
             Debug.Log("Autofocus settato");
-        }
         else
-        {
            Debug.Log("Questo dispositivo non supporta l'autofocus");
-        }
     }
 }
