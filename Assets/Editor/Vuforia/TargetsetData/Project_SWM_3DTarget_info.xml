@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<QCARInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="QCAR_Dataset_config.xsd">
-  <TargetSet version="5.0" toolVersion="4.2.0">
-    <ObjectTarget bbox="0.0 0.0 0.0 142.5 95.0 95.0" captureAppVersion="1.0.0" lastSaved="2017-10-07 20:20:39" name="bozza_target_moto" targetId="081080f8be264b8f8e3e53a3865587a3" version="2.0" />
-  </TargetSet>
-</QCARInfo>
