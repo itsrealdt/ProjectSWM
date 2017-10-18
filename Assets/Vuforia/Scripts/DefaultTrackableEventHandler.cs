@@ -12,14 +12,6 @@ using Vuforia;
 
 public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandler
 {
-    // Roba aggiunta da David per calcolo distanza, vedi OnTrackingFound()
-    private RaycastCamera refRC;
-    public GameObject loadingIcon, detectionText;
-    private void Awake()
-    {
-        refRC = FindObjectOfType<RaycastCamera>();
-    }
-
     #region PRIVATE_MEMBER_VARIABLES
 
     protected TrackableBehaviour mTrackableBehaviour;
@@ -70,35 +62,19 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     protected virtual void OnTrackingFound()
     {
-        StartCoroutine(LoadMarkerCO());
+        //StartCoroutine(LoadMarkerCO());
+        TrackingFound();
     }
 
     protected virtual void OnTrackingLost()
     {
-        ActiveLoadingIcon(true);
         TrackingLost();
-        SetTextDetectionMarker(-1);
     }
 
     #endregion // PRIVATE_METHODS
-
-    private IEnumerator LoadMarkerCO()
-    {
-        while (loadingIcon.GetComponent<UnityEngine.UI.Image>().fillAmount < 1)
-        {
-            loadingIcon.GetComponent<UnityEngine.UI.Image>().fillAmount += .025f;
-            SetTextDetectionMarker(0);
-            yield return null;
-            //yield return new WaitForSeconds(.1f);
-        }
-        TrackingFound();
-        SetTextDetectionMarker(1);
-        ActiveLoadingIcon(false);
-        loadingIcon.GetComponent<UnityEngine.UI.Image>().fillAmount = 0;
-    }
     private void TrackingFound()
     {
-        refRC.CalculateDistance();
+        Debug.LogWarning("SONO IN TRACKING FOUND!");
 
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
@@ -118,6 +94,8 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     }
     private void TrackingLost()
     {
+        Debug.LogWarning("SONO IN TRACKING LOST!");
+
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
@@ -133,24 +111,5 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         // Disable canvas':
         foreach (var component in canvasComponents)
             component.enabled = false;
-    }
-    private void ActiveLoadingIcon(bool _on)
-    {
-        loadingIcon.SetActive(_on);
-    }
-    private void SetTextDetectionMarker(sbyte _detectionLevel)
-    {
-        switch (_detectionLevel)
-        {
-            case 0:
-                detectionText.GetComponent<UnityEngine.UI.Text>().text = "Acquisizione marker in corso...";
-                break;
-            case 1:
-                detectionText.GetComponent<UnityEngine.UI.Text>().text = "Tieni il marker inquadrato";
-                break;
-            case -1:
-                detectionText.GetComponent<UnityEngine.UI.Text>().text = "Inquadra il marker";
-                break;
-        }        
     }
 }
