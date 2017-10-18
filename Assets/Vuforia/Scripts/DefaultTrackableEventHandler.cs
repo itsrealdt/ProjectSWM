@@ -7,9 +7,11 @@ Confidential and Proprietary - Protected under copyright and other laws.
 ==============================================================================*/
 
 using UnityEngine;
-using System.Collections;
 using Vuforia;
 
+/// <summary>
+///     A custom handler that implements the ITrackableEventHandler interface.
+/// </summary>
 public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandler
 {
     #region PRIVATE_MEMBER_VARIABLES
@@ -35,14 +37,19 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     ///     Implementation of the ITrackableEventHandler function called when the
     ///     tracking state changes.
     /// </summary>
-    public void OnTrackableStateChanged(TrackableBehaviour.Status previousStatus, TrackableBehaviour.Status newStatus)
+    public void OnTrackableStateChanged(
+        TrackableBehaviour.Status previousStatus,
+        TrackableBehaviour.Status newStatus)
     {
-        if (newStatus == TrackableBehaviour.Status.DETECTED || newStatus == TrackableBehaviour.Status.TRACKED || newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED)
+        if (newStatus == TrackableBehaviour.Status.DETECTED ||
+            newStatus == TrackableBehaviour.Status.TRACKED ||
+            newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED)
         {
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
             OnTrackingFound();
         }
-        else if (previousStatus == TrackableBehaviour.Status.TRACKED && newStatus == TrackableBehaviour.Status.NOT_FOUND)
+        else if (previousStatus == TrackableBehaviour.Status.TRACKED &&
+                 newStatus == TrackableBehaviour.Status.NOT_FOUND)
         {
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
             OnTrackingLost();
@@ -62,23 +69,10 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     protected virtual void OnTrackingFound()
     {
-        //StartCoroutine(LoadMarkerCO());
-        TrackingFound();
-    }
-
-    protected virtual void OnTrackingLost()
-    {
-        TrackingLost();
-    }
-
-    #endregion // PRIVATE_METHODS
-    private void TrackingFound()
-    {
-        Debug.LogWarning("SONO IN TRACKING FOUND!");
-
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
+        //CameraDevice.Instance.SetFlashTorchMode(true); //inserito il comando di attivazione del flash
 
         // Enable rendering:
         foreach (var component in rendererComponents)
@@ -92,14 +86,17 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         foreach (var component in canvasComponents)
             component.enabled = true;
     }
-    private void TrackingLost()
-    {
-        Debug.LogWarning("SONO IN TRACKING LOST!");
 
+
+    protected virtual void OnTrackingLost()
+    {
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
-        
+        //CameraDevice.Instance.SetFlashTorchMode(true); //inserito il comando di attivazione del flash
+        PilotEnabler pilotElements = FindObjectOfType<PilotEnabler>();
+        pilotElements.OnThisTrackingLost();
+
         // Disable rendering:
         foreach (var component in rendererComponents)
             component.enabled = false;
@@ -112,4 +109,6 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         foreach (var component in canvasComponents)
             component.enabled = false;
     }
+
+    #endregion // PRIVATE_METHODS
 }

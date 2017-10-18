@@ -21,7 +21,7 @@ public class CustomARBehaviour : MonoBehaviour
             yield return null;
             //yield return new WaitForSeconds(.1f);
         }
-        TrackingFound();
+        //TrackingFound();
         SetTextDetectionMarker(1);
         //ActiveLoadingIcon(false);
         loadingIcon.GetComponent<UnityEngine.UI.Image>().fillAmount = 0;
