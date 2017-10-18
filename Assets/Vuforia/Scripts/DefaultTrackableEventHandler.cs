@@ -1,31 +1,13 @@
-/*==============================================================================
-Copyright (c) 2017 PTC Inc. All Rights Reserved.
-
-Copyright (c) 2010-2014 Qualcomm Connected Experiences, Inc.
-All Rights Reserved.
-Confidential and Proprietary - Protected under copyright and other laws.
-==============================================================================*/
-
-using UnityEngine;
-using UnityEngine.SceneManagement;
 using System;
 using Vuforia;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
-/// <summary>
-///     A custom handler that implements the ITrackableEventHandler interface.
-/// </summary>
 public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandler
 {
-    #region PRIVATE_MEMBER_VARIABLES
-
     protected TrackableBehaviour mTrackableBehaviour;
-
-    #endregion // PRIVATE_MEMBER_VARIABLES
-
     public Action<bool> delLoadMarker;
     public Action<DetectionLevel> delDetectionMarker;
-
-    #region UNTIY_MONOBEHAVIOUR_METHODS
 
     protected virtual void Start()
     {
@@ -34,27 +16,14 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             mTrackableBehaviour.RegisterTrackableEventHandler(this);
     }
 
-    #endregion // UNTIY_MONOBEHAVIOUR_METHODS
-
-    #region PUBLIC_METHODS
-
-    /// <summary>
-    ///     Implementation of the ITrackableEventHandler function called when the
-    ///     tracking state changes.
-    /// </summary>
-    public void OnTrackableStateChanged(
-        TrackableBehaviour.Status previousStatus,
-        TrackableBehaviour.Status newStatus)
+    public void OnTrackableStateChanged(TrackableBehaviour.Status previousStatus, TrackableBehaviour.Status newStatus)
     {
-        if (newStatus == TrackableBehaviour.Status.DETECTED ||
-            newStatus == TrackableBehaviour.Status.TRACKED ||
-            newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED)
+        if (newStatus == TrackableBehaviour.Status.DETECTED || newStatus == TrackableBehaviour.Status.TRACKED || newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED)
         {
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
             OnTrackingFound();
         }
-        else if (previousStatus == TrackableBehaviour.Status.TRACKED &&
-                 newStatus == TrackableBehaviour.Status.NOT_FOUND)
+        else if (previousStatus == TrackableBehaviour.Status.TRACKED && newStatus == TrackableBehaviour.Status.NOT_FOUND)
         {
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
             OnTrackingLost();
@@ -68,10 +37,6 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         }
     }
 
-    #endregion // PUBLIC_METHODS
-
-    #region PRIVATE_METHODS
-
     protected virtual void OnTrackingFound()
     {
         Scene scene = SceneManager.GetActiveScene();
@@ -81,7 +46,6 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         else
             TrackingFound();
     }
-
 
     protected virtual void OnTrackingLost()
     {
@@ -95,8 +59,6 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         TrackingLost();
 
     }
-
-    #endregion // PRIVATE_METHODS
 
     public void TrackingFound()
     {

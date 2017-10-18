@@ -6,7 +6,8 @@ public class RaycastCamera : MonoBehaviour
 {
     public GameObject markerAR;
     private Vector3 delta;
-    private float distance, detectionTimeDistance;
+    private float distance;
+    public float detectionTimeDistance;
 
     private void Awake()
     {

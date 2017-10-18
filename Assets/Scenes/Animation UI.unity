@@ -1215,6 +1215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   markerAR: {fileID: 1189190260}
+  detectionTimeDistance: 2
 --- !u!20 &804907122
 Camera:
   m_ObjectHideFlags: 0
