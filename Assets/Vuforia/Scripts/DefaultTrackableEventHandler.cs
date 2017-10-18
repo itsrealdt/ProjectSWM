@@ -7,6 +7,7 @@ Confidential and Proprietary - Protected under copyright and other laws.
 ==============================================================================*/
 
 using UnityEngine;
+using System;
 using Vuforia;
 
 /// <summary>
@@ -19,6 +20,9 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     protected TrackableBehaviour mTrackableBehaviour;
 
     #endregion // PRIVATE_MEMBER_VARIABLES
+
+    public Action<bool> delLoadMarker;
+    public Action<DetectionLevel> delDetectionMarker;
 
     #region UNTIY_MONOBEHAVIOUR_METHODS
 
@@ -69,6 +73,23 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     protected virtual void OnTrackingFound()
     {
+        //delLoadMarker(true);
+        TrackingFound();
+    }
+
+
+    protected virtual void OnTrackingLost()
+    {
+        //delDetectionMarker(DetectionLevel.Lost);
+        TrackingLost();
+    }
+
+    #endregion // PRIVATE_METHODS
+
+    public void TrackingFound()
+    {
+        Debug.LogWarning("Sono dentro TrackingFound");
+
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
@@ -87,15 +108,16 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             component.enabled = true;
     }
 
-
-    protected virtual void OnTrackingLost()
+    public void TrackingLost()
     {
+        Debug.LogWarning("Sono dentro STrackingLost");
+
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
         //CameraDevice.Instance.SetFlashTorchMode(true); //inserito il comando di attivazione del flash
-        PilotEnabler pilotElements = FindObjectOfType<PilotEnabler>();
-        pilotElements.OnThisTrackingLost();
+        //PilotEnabler pilotElements = FindObjectOfType<PilotEnabler>();
+        //pilotElements.OnThisTrackingLost();
 
         // Disable rendering:
         foreach (var component in rendererComponents)
@@ -109,6 +131,4 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         foreach (var component in canvasComponents)
             component.enabled = false;
     }
-
-    #endregion // PRIVATE_METHODS
 }

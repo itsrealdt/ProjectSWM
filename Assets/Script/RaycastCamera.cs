@@ -6,7 +6,12 @@ public class RaycastCamera : MonoBehaviour
 {
     public GameObject markerAR;
     private Vector3 delta;
-    private float distance;
+    private float distance, detectionTimeDistance;
+
+    private void Awake()
+    {
+        CalculateDistance();
+    }
 
     public void CalculateDistance()
     {
@@ -20,7 +25,7 @@ public class RaycastCamera : MonoBehaviour
             delta = this.transform.position - markerAR.transform.position;
             distance = delta.sqrMagnitude;
             Debug.Log("Distance to marker: " + distance / 100 + " cm");
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(detectionTimeDistance);
         }
     }
 }
