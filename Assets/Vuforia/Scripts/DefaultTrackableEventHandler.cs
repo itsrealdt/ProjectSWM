@@ -7,6 +7,7 @@ Confidential and Proprietary - Protected under copyright and other laws.
 ==============================================================================*/
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System;
 using Vuforia;
 
@@ -73,15 +74,26 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     protected virtual void OnTrackingFound()
     {
-        //delLoadMarker(true);
-        TrackingFound();
+        Scene scene = SceneManager.GetActiveScene();
+
+        if (scene.name == "Animation UI")
+            delLoadMarker(true);
+        else
+            TrackingFound();
     }
 
 
     protected virtual void OnTrackingLost()
     {
-        //delDetectionMarker(DetectionLevel.Lost);
+        Scene scene = SceneManager.GetActiveScene();
+
+        if (scene.name == "Animation UI")
+        {
+            delDetectionMarker(DetectionLevel.Lost);
+            TrackingLost();
+        }
         TrackingLost();
+
     }
 
     #endregion // PRIVATE_METHODS
