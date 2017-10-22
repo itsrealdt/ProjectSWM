@@ -470,10 +470,10 @@ GameObject:
   m_Component:
   - component: {fileID: 603515949}
   - component: {fileID: 603515948}
-  - component: {fileID: 603515947}
   - component: {fileID: 603515946}
   - component: {fileID: 603515945}
   - component: {fileID: 603515944}
+  - component: {fileID: 603515950}
   m_Layer: 0
   m_Name: ImageTarget
   m_TagString: Untagged
@@ -533,17 +533,6 @@ MonoBehaviour:
   m_Script: {fileID: -1770992566, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &603515947
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 603515943}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &603515948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -586,6 +575,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &603515950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 603515943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a73a4f6cb46975b4d91008a1a32004f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &903336256
 Prefab:
   m_ObjectHideFlags: 0
