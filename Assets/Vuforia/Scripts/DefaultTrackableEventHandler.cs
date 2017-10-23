@@ -41,7 +41,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     {
         Scene scene = SceneManager.GetActiveScene();
 
-        if (scene.name == "Animation UI")
+        if (scene.name == "Animation UI" || scene.name == "Merge_23-10")
             delLoadMarker(true);
         else
             TrackingFound();
@@ -51,7 +51,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     {
         Scene scene = SceneManager.GetActiveScene();
 
-        if (scene.name == "Animation UI")
+        if (scene.name == "Animation UI"|| scene.name == "Merge_23-10")
         {
             delDetectionMarker(DetectionLevel.Lost);
             TrackingLost();
