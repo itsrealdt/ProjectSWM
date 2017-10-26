@@ -9,11 +9,14 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     public Action<bool> delLoadMarker;
     public Action<DetectionLevel> delDetectionMarker;
 
+    
+
     protected virtual void Start()
     {
         mTrackableBehaviour = GetComponent<TrackableBehaviour>();
         if (mTrackableBehaviour)
             mTrackableBehaviour.RegisterTrackableEventHandler(this);
+        
     }
 
     public void OnTrackableStateChanged(TrackableBehaviour.Status previousStatus, TrackableBehaviour.Status newStatus)
@@ -64,6 +67,8 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     {
         Debug.LogWarning("Sono dentro TrackingFound");
 
+      
+
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
@@ -89,9 +94,13 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
+
         //CameraDevice.Instance.SetFlashTorchMode(true); //inserito il comando di attivazione del flash
         //PilotEnabler pilotElements = FindObjectOfType<PilotEnabler>();
         //pilotElements.OnThisTrackingLost();
+
+        //MotoEnabler motoElements = FindObjectOfType<MotoEnabler>();
+        //motoElements.OnThisTrackingLost();
 
         // Disable rendering:
         foreach (var component in rendererComponents)

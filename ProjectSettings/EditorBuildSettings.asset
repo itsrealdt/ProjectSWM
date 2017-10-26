@@ -8,3 +8,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Animation UI.unity
     guid: fa0d89c2d89b4334789252c3dd40f319
+  - enabled: 1
+    path: Assets/Scenes/Daniele/Mr 2D su Moto 3D Interagibile.unity
+    guid: be3a40d8dd519ba4a877c7d52e78db78
