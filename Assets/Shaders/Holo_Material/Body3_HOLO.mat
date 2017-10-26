@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Disk
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Name: Body3_HOLO
+  m_Shader: {fileID: 4800000, guid: 29fed12d8547e354e90be987488147c1, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
@@ -42,8 +42,12 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _FlickerTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: cf5b000592c614b4997123418493b721, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -58,34 +62,51 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _Alpha: 1
+    - _Brightness: 3
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EdgeAlpha: 0
     - _EmissionScaleUI: 0
+    - _FlickerSpeed: 1
+    - _Fold: 1
     - _FrezFalloff: 4
-    - _FrezPow: 0.25
-    - _Gloss: 0.7307693
+    - _FrezPow: 1.1923077
+    - _GlitchIntensity: 0
+    - _GlitchSpeed: 1
+    - _Gloss: 0.115384616
     - _GlossMapScale: 1
-    - _Glossiness: 0
+    - _Glossiness: 0.516
     - _GlossyReflections: 1
+    - _GlowSpeed: 1
+    - _GlowTiling: 0.05
     - _Metalics: 0.5
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Reflection: 0.23076923
-    - _Shininess: 0.41379845
+    - _Reflection: 0.13461539
+    - _RimPower: 5
+    - _ScanSpeed: 1
+    - _ScanTiling: 0.05
+    - _Shininess: 0.45562884
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.5294118, g: 0.5294118, b: 0.5294118, a: 1}
+    - _Color: {r: 0.20588237, g: 0.20588237, b: 0.20588237, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
-    - _ReflectColor: {r: 1, g: 1, b: 1, a: 0.5}
-    - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
+    - _MainColor: {r: 1, g: 1, b: 1, a: 1}
+    - _ReflectColor: {r: 0.25735295, g: 0.25735295, b: 0.25735295, a: 0.5019608}
+    - _RimColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.6985294, g: 0.6420307, b: 0.6420307, a: 1}
