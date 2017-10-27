@@ -9,7 +9,8 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     public Action<bool> delLoadMarker;
     public Action<DetectionLevel> delDetectionMarker;
 
-    
+    public GameObject objectToMove;
+    public bool effect;
 
     protected virtual void Start()
     {
@@ -85,6 +86,12 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         // Enable canvas':
         foreach (var component in canvasComponents)
             component.enabled = true;
+
+        //Attiva l'effetto di apparizione 
+        if (effect)
+        {
+            objectToMove.GetComponent<MovePlaneEffect>().ActivateEffect();
+        }
     }
 
     public void TrackingLost()
@@ -113,5 +120,12 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         // Disable canvas':
         foreach (var component in canvasComponents)
             component.enabled = false;
+
+        //Resetta la posizione del quad per l'effetto di apparizione
+        if (effect)
+        {
+            objectToMove.transform.position = objectToMove.GetComponent<MovePlaneEffect>().startPos;
+        }
+
     }
 }
