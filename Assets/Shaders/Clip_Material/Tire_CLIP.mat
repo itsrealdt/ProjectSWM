@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Tire_SLICE
-  m_Shader: {fileID: 4800000, guid: 145d75ffefaa50d43ad04a93f894542f, type: 3}
+  m_Name: Tire_CLIP
+  m_Shader: {fileID: 4800000, guid: 7b58c9073c84ad6449baeb00b36bb92c, type: 3}
   m_ShaderKeywords: _EMISSION _NORMALMAP
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
@@ -22,6 +22,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: 16840493a8deebb49843e71227e54c9c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Conversion:
+        m_Texture: {fileID: 2800000, guid: dd8287d41aafb4b4bacd7e0ebf634a0c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -34,6 +38,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _EdgeTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -43,7 +51,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: b876a7943dfa1b34dad7a6f8309504f6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -66,9 +74,13 @@ Material:
     - _Alpha: 1
     - _Brightness: 3
     - _BumpScale: 1
+    - _ConvertDistance: 7.1
+    - _ConvertEmission: 0.307
     - _Cutoff: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _EdgeDistance: 7.1
+    - _EdgeEmission: 1
     - _EmissionScaleUI: 0
     - _FlickerSpeed: 1
     - _Fold: 1
@@ -96,10 +108,12 @@ Material:
     m_Colors:
     - _Color: {r: 0.39705884, g: 0.39705884, b: 0.39705884, a: 1}
     - _CrossColor: {r: 1, g: 1, b: 1, a: 1}
+    - _EdgeColor: {r: 0.12456747, g: 0.3953943, b: 0.5294118, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
     - _MainColor: {r: 1, g: 1, b: 1, a: 1}
-    - _PlaneNormal: {r: -1.0000005, g: 0, b: -0.00000009313226, a: 0}
+    - _PlaneNormal: {r: 1, g: 0, b: 0, a: 0}
+    - _PlanePoint: {r: 140, g: 0, b: 0, a: 0}
     - _PlanePosition: {r: 185.50006, g: 70.5, b: 19.499989, a: 0}
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 0.03676468, g: 0.03676468, b: 0.03676468, a: 1}

@@ -9,13 +9,15 @@ public class OnePlaneCuttingController : MonoBehaviour {
     public Vector3 normal;
     public Vector3 position;
     public Renderer rend;
+    
     // Use this for initialization
     void Start () {
         rend = GetComponent<Renderer>();
         normal = plane.transform.TransformVector(new Vector3(0,0,-1));
-        position = plane.transform.position;
+        position = plane.transform.localPosition;
         UpdateShaderProperties();
     }
+
     void Update ()
     {
         UpdateShaderProperties();

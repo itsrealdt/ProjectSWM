@@ -10,6 +10,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     public Action<DetectionLevel> delDetectionMarker;
 
     public GameObject objectToMove;
+    public GameObject[] objectWithEffect;
     public bool effect;
 
     protected virtual void Start()
@@ -90,7 +91,11 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         //Attiva l'effetto di apparizione 
         if (effect)
         {
-            objectToMove.GetComponent<MovePlaneEffect>().ActivateEffect();
+            //objectToMove.GetComponent<MovePlaneEffect>().ActivateEffect();
+            for (int i = 0; i < objectWithEffect.Length; i++)
+            {
+                objectWithEffect[i].GetComponent<ClipShaderConfig>().ActivateEffect();
+            }
         }
     }
 
@@ -124,7 +129,11 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         //Resetta la posizione del quad per l'effetto di apparizione
         if (effect)
         {
-            objectToMove.transform.position = objectToMove.GetComponent<MovePlaneEffect>().startPos;
+            //objectToMove.transform.position = objectToMove.GetComponent<MovePlaneEffect>().startPos;
+            for (int i = 0; i < objectWithEffect.Length; i++)
+            {
+                objectWithEffect[i].GetComponent<ClipShaderConfig>().ResetPos();
+            }
         }
 
     }

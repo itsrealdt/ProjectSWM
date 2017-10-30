@@ -35,13 +35,13 @@ public class MovePlaneEffect : MonoBehaviour {
     public IEnumerator MoveOverSeconds(GameObject objectToMove, Vector3 end, float seconds)
     {
         float elapsedTime = 0;
-        Vector3 startingPos = objectToMove.transform.position;
+        Vector3 startingPos = objectToMove.transform.localPosition;
         while (elapsedTime < seconds)
         {
-            objectToMove.transform.position = Vector3.Lerp(startingPos, end, (elapsedTime / seconds));
+            objectToMove.transform.localPosition = Vector3.Lerp(startingPos, end, (elapsedTime / seconds));
             elapsedTime += Time.deltaTime;
             yield return new WaitForEndOfFrame();
         }
-        objectToMove.transform.position = end;
+        objectToMove.transform.localPosition = end;
     }
 }
