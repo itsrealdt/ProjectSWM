@@ -10,6 +10,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     public Action<DetectionLevel> delDetectionMarker;
 
     public GameObject objectToMove;
+    public GameObject motoHolo;
     public GameObject[] objectWithEffect;
     public bool effect;
 
@@ -97,6 +98,8 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
                 objectWithEffect[i].GetComponent<ClipShaderConfig>().ActivateEffect();
             }
         }
+
+        motoHolo.SetActive(false);
     }
 
     public void TrackingLost()
@@ -136,5 +139,6 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             }
         }
 
+        motoHolo.SetActive(true);
     }
 }
