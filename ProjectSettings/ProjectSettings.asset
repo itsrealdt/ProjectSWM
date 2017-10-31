@@ -7,12 +7,12 @@ PlayerSettings:
   productGUID: 7147a9a1656a58c45875f21d8df19d6d
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
-  defaultScreenOrientation: 0
+  defaultScreenOrientation: 3
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: It's Real
-  productName: Moto 2D
+  productName: SWM Alpha
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -148,7 +148,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.ItsReal.Moto2D
+    Android: com.ItsReal.SWMAlpha
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 16
@@ -241,7 +241,7 @@ PlayerSettings:
   - m_BuildTarget: Android
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 7673af940e5f90c44801f3279fd19527, type: 3}
+      m_Icon: {fileID: 2800000, guid: 540ae8dd803a8b54d8bcaf3c63b8d80d, type: 3}
       m_Width: 192
       m_Height: 192
       m_Kind: 0

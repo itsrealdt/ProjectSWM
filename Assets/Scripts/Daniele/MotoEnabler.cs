@@ -11,26 +11,29 @@ public class MotoEnabler : MonoBehaviour {
 	
 	public void SwitchMoto()
     {
-       
 
-		if (!isEnable)
+
+        if (!isEnable)
         {
             moto1.SetActive(false);
             moto2.transform.position = moto1.transform.position;
             moto2.transform.localScale = moto1.transform.localScale;
             moto2.transform.rotation = moto1.transform.rotation;
             moto2.SetActive(true);
-            this.GetComponent<Image>().sprite = Resources.Load<Sprite>("pilotEnabled");
+            this.GetComponent<Image>().sprite = Resources.Load<Sprite>("Button_ON");
             isEnable = true;
         }
-        
-	}
+        else
+            OnThisTrackingLost();
+    
+
+        }
 
     public void OnThisTrackingLost()
     {
             moto1.SetActive(true);
             moto2.SetActive(false);
-            this.GetComponent<Image>().sprite = Resources.Load<Sprite>("pilotDisabled");
+            this.GetComponent<Image>().sprite = Resources.Load<Sprite>("Button_OFF");
             isEnable = false;
     }
 
