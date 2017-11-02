@@ -52,7 +52,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         if (scene.name == "Merge_02-11" || scene.name == "Merge_23-10")
             delLoadMarker(true);
 
-        //TrackingFound();
+        TrackingFound();
     }
 
     protected virtual void OnTrackingLost()
@@ -64,7 +64,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             delDetectionMarker(DetectionLevel.Lost);
             TrackingLost();
         }
-        //TrackingLost();
+        TrackingLost();
     }
 
     public void TrackingFound()
@@ -99,7 +99,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
                 objectWithEffect[i].GetComponent<ClipShaderConfig>().ActivateEffect();
             }
         }
-        //motoHolo.SetActive(false);
+        motoHolo.SetActive(false);
     }
 
     public void TrackingLost()
@@ -136,6 +136,6 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
                 objectWithEffect[i].GetComponent<ClipShaderConfig>().ResetPos();
             }
         }
-        //motoHolo.SetActive(true);
+        motoHolo.SetActive(true);
     }
 }
