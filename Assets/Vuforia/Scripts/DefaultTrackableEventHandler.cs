@@ -1,6 +1,7 @@
 using System;
 using Vuforia;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandler
@@ -8,6 +9,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     protected TrackableBehaviour mTrackableBehaviour;
     public Action<bool> delLoadMarker;
     public Action<DetectionLevel> delDetectionMarker;
+    //public Button bSwitch;
 
     public GameObject objectToMove;
     public GameObject motoHolo;
@@ -47,30 +49,29 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     {
         Scene scene = SceneManager.GetActiveScene();
 
-        if (scene.name == "Animation UI" || scene.name == "Merge_23-10")
+        if (scene.name == "Merge_02-11" || scene.name == "Merge_23-10")
             delLoadMarker(true);
-        else
-            TrackingFound();
+
+        //TrackingFound();
     }
 
     protected virtual void OnTrackingLost()
     {
         Scene scene = SceneManager.GetActiveScene();
 
-        if (scene.name == "Animation UI"|| scene.name == "Merge_23-10")
+        if (scene.name == "Merge_02-11"|| scene.name == "Merge_23-10" )
         {
             delDetectionMarker(DetectionLevel.Lost);
             TrackingLost();
         }
-        TrackingLost();
-
+        //TrackingLost();
     }
 
     public void TrackingFound()
     {
         Debug.LogWarning("Sono dentro TrackingFound");
 
-      
+        //bSwitch.interactable = true;
 
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
@@ -98,21 +99,18 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
                 objectWithEffect[i].GetComponent<ClipShaderConfig>().ActivateEffect();
             }
         }
-
-        motoHolo.SetActive(false);
+        //motoHolo.SetActive(false);
     }
 
     public void TrackingLost()
     {
-        Debug.LogWarning("Sono dentro STrackingLost");
+        Debug.LogWarning("Sono dentro TrackingLost");
 
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
 
         //CameraDevice.Instance.SetFlashTorchMode(true); //inserito il comando di attivazione del flash
-        //PilotEnabler pilotElements = FindObjectOfType<PilotEnabler>();
-        //pilotElements.OnThisTrackingLost();
 
         //MotoEnabler motoElements = FindObjectOfType<MotoEnabler>();
         //motoElements.OnThisTrackingLost();
@@ -138,7 +136,6 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
                 objectWithEffect[i].GetComponent<ClipShaderConfig>().ResetPos();
             }
         }
-
-        motoHolo.SetActive(true);
+        //motoHolo.SetActive(true);
     }
 }
