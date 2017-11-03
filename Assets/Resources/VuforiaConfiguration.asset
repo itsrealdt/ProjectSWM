@@ -15,7 +15,7 @@ MonoBehaviour:
     vuforiaLicenseKey: AV9mDsT/////AAAAGUIs88lcg08yvlwMzjhHgTEaFIEOTFmyf+QxOCwLwc2vLIyLCjpycPTMjEiy1dFWfALl4pt4squBeV1jnuszut5QsnftJGms7HuZmvP2PgaVxygnUmSOFsrjtlM0RT4LbNGGJhlLuz61tliTV+L9ddgoJzs8eoffLqQYEj7TXt6QlUNS8rzHVf9N/0hsGI8iTVcZGsX8PdqR+2C1F+uuRZVw5OOZHDyFPT0EQkUKpt0+WJ3B/cIoXFAAsSArDVLRP6Lu0UDLcXk+M9UILiYBVsGmvXAtFERa0t+hQOLRcrNIbUajD6RNBK9cNSdoOUmLWKojha/oGIYLy9lksUsuzG4UvAFbbZoyKF4LhGJPFl+q
     ufoLicenseKey: QVRYVDhnTC8vLy8vQUFBQUtQRnBuTVpQZVVQS2dBZ2hsWHFsSkpXRllsa0lmOEJFeFJHZFNheVRCbDVtWXN6YTJSb3JOalBpSXN6SVRmNnZzZngzT3Y3ZElWV3U1WU9FSTV0Q2lnNEI5alYvODJSVkZSY3ZtdmNzM0RoSXVyMGttVUlqcXduSUZSN1psTFg1bkVmMEJPU3pIUFVnNFB0NGhncEZ0U1hUVlZ6ejg3b1V6N1Q0Rk9OclFaTUtaZzBYdDdwM0JHT0pvOUx0L25OS29hNHEwd0FjdENJcGJSK0Q2SW1uc29najRKbjhIckxPaGhUSHpjSDYrSkZiTnRvcGFpdXdiNzZiM2x4OTRnYkU4NElCd0FWMFhXTXA2eGV6bENXcmt3VGszZ3c3cUh2aHJobEo2eWhKRjdVNlVXWFRxcE4rSEVyWElIeFNjckg5YUs3QjNNUXNRd3VmQWY2NmZtV0RFNnI1Z0lCS1lKeVkyVHhnbHB4aVozbmw=
     delayedInitialization: 0
-    cameraDeviceModeSetting: -1
+    cameraDeviceModeSetting: -2
     maxSimultaneousImageTargets: 1
     maxSimultaneousObjectTargets: 1
     useDelayedLoadingObjectTargets: 1
@@ -69,7 +69,7 @@ MonoBehaviour:
     trackingMode: 0
     posePrediction: 0
     modelCorrectionMode: 0
-    modelTransformEnabled: 0
+    modelTransformEnabled: 1
     modelTransform: {x: 0, y: 0.1, z: -0.1}
   webcam:
     deviceNameSetInEditor: Logitech Webcam C210

@@ -49,13 +49,13 @@ public class CustomARBehaviour : MonoBehaviour
         switch (_detectionLevel)
         {
             case DetectionLevel.Acquisition:
-                detectionText.GetComponent<UnityEngine.UI.Text>().text = "Acquisizione marker in corso...";
+                detectionText.GetComponent<UnityEngine.UI.Text>().text = "ACQUISIZIONE IN CORSO...";
                 break;
             case DetectionLevel.Tracked:
-                detectionText.GetComponent<UnityEngine.UI.Text>().text = "Tieni bene inquadrato il marker";
+                detectionText.GetComponent<UnityEngine.UI.Text>().text = "";
                 break;
             case DetectionLevel.Lost:
-                detectionText.GetComponent<UnityEngine.UI.Text>().text = "Inquadra il marker";
+                detectionText.GetComponent<UnityEngine.UI.Text>().text = "INQUADRA IL MARKER";
                 break;
         }
     }

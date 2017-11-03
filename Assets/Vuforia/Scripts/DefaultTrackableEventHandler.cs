@@ -11,17 +11,21 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     public Action<DetectionLevel> delDetectionMarker;
     //public Button bSwitch;
 
-    public GameObject objectToMove;
+    public GameObject motoObject;
     public GameObject motoHolo;
     public GameObject[] objectWithEffect;
     public bool effect;
+
+    private Vector3 initialScaleMoto;
 
     protected virtual void Start()
     {
         mTrackableBehaviour = GetComponent<TrackableBehaviour>();
         if (mTrackableBehaviour)
             mTrackableBehaviour.RegisterTrackableEventHandler(this);
-        
+
+
+        initialScaleMoto = motoObject.transform.localScale;
     }
 
     public void OnTrackableStateChanged(TrackableBehaviour.Status previousStatus, TrackableBehaviour.Status newStatus)
@@ -49,21 +53,22 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     {
         Scene scene = SceneManager.GetActiveScene();
 
-        if (scene.name == "Merge_02-11" || scene.name == "Merge_23-10")
-            delLoadMarker(true);
+        //if (scene.name == "Merge_02-11" || scene.name == "Merge_23-10")
+        delLoadMarker(true);
 
-        TrackingFound();
+        //TrackingFound();
     }
 
     protected virtual void OnTrackingLost()
     {
         Scene scene = SceneManager.GetActiveScene();
 
-        if (scene.name == "Merge_02-11"|| scene.name == "Merge_23-10" )
-        {
-            delDetectionMarker(DetectionLevel.Lost);
-            TrackingLost();
-        }
+        //if (scene.name == "Merge_02-11"|| scene.name == "Merge_23-10" )
+        //{
+        //    delDetectionMarker(DetectionLevel.Lost);
+        //    TrackingLost();
+        //}
+        delDetectionMarker(DetectionLevel.Lost);
         TrackingLost();
     }
 
@@ -137,5 +142,9 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             }
         }
         motoHolo.SetActive(true);
+
+        motoObject.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
+        motoObject.transform.localRotation = new Quaternion(0f, 0f, 0f, 0f);
+        motoObject.transform.Rotate(0f, -90f, 0f);
     }
 }

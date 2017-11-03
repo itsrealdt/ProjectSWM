@@ -109,8 +109,8 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
     - _MainColor: {r: 1, g: 1, b: 1, a: 1}
-    - _PlaneNormal: {r: -1.0000005, g: 0, b: -0.00000009313226, a: 0}
-    - _PlanePosition: {r: 185.50006, g: 70.5, b: 19.499989, a: 0}
+    - _PlaneNormal: {r: -0.50155956, g: 0, b: -0.000000046711346, a: 0}
+    - _PlanePosition: {r: 126.78371, g: 35.35993, b: -16.53727, a: 0}
     - _ReflectColor: {r: 0.25735295, g: 0.25735295, b: 0.25735295, a: 0.5019608}
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 0.6985294, g: 0.6420307, b: 0.6420307, a: 1}
