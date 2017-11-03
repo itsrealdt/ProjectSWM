@@ -14,9 +14,8 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     public GameObject motoObject;
     public GameObject motoHolo;
     public GameObject[] objectWithEffect;
-    public bool effect;
 
-    private Vector3 initialScaleMoto;
+    //private Vector3 initialScaleMoto;
 
     protected virtual void Start()
     {
@@ -25,7 +24,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             mTrackableBehaviour.RegisterTrackableEventHandler(this);
 
 
-        initialScaleMoto = motoObject.transform.localScale;
+        //initialScaleMoto = motoObject.transform.localScale;
     }
 
     public void OnTrackableStateChanged(TrackableBehaviour.Status previousStatus, TrackableBehaviour.Status newStatus)
@@ -45,7 +44,9 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             // For combo of previousStatus=UNKNOWN + newStatus=UNKNOWN|NOT_FOUND
             // Vuforia is starting, but tracking has not been lost or found yet
             // Call OnTrackingLost() to hide the augmentations
-            OnTrackingLost();
+            
+            //COMMENTATO PER FARE DELLE PROVE!!! CAUSA UN ERRORE ALL'AVVIO!!!
+            //OnTrackingLost();
         }
     }
 
@@ -96,13 +97,9 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             component.enabled = true;
 
         //Attiva l'effetto di apparizione 
-        if (effect)
+        for (int i = 0; i < objectWithEffect.Length; i++)
         {
-            //objectToMove.GetComponent<MovePlaneEffect>().ActivateEffect();
-            for (int i = 0; i < objectWithEffect.Length; i++)
-            {
-                objectWithEffect[i].GetComponent<ClipShaderConfig>().ActivateEffect();
-            }
+            objectWithEffect[i].GetComponent<ClipShaderConfig>().ActivateEffect();
         }
         motoHolo.SetActive(false);
     }
@@ -132,15 +129,12 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         foreach (var component in canvasComponents)
             component.enabled = false;
 
-        //Resetta la posizione del quad per l'effetto di apparizione
-        if (effect)
+        //Resetta la x per resettare l'effetto di apparizione
+        for (int i = 0; i < objectWithEffect.Length; i++)
         {
-            //objectToMove.transform.position = objectToMove.GetComponent<MovePlaneEffect>().startPos;
-            for (int i = 0; i < objectWithEffect.Length; i++)
-            {
-                objectWithEffect[i].GetComponent<ClipShaderConfig>().ResetPos();
-            }
+            objectWithEffect[i].GetComponent<ClipShaderConfig>().ResetPos();
         }
+
         motoHolo.SetActive(true);
 
         motoObject.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
