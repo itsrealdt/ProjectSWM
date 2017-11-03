@@ -49,8 +49,9 @@ namespace Lean.Touch
 			var scale        = LeanGesture.GetPinchScale(fingers, WheelSensitivity);
 			var screenCenter = LeanGesture.GetScreenCenter(fingers);
 
-			// Perform the scaling
-			Scale(scale, screenCenter);
+            // Perform the scaling
+            Scale(scale, screenCenter);
+         
 		}
 
 		private void Scale(float scale, Vector2 screenCenter)
@@ -79,8 +80,18 @@ namespace Lean.Touch
 				}
 				else
 				{
-					// Grow the local scale by scale
-					transform.localScale *= scale;
+                    // Grow the local scale by scale
+                    if (scale > 1 && this.gameObject.transform.localScale.x < 8)
+                    {
+                        Debug.Log("scale: " + scale);
+                        transform.localScale *= scale;
+                    }
+                    else if (scale < 1 && this.gameObject.transform.localScale.x > 1)
+                    {
+                        transform.localScale *= scale;
+                    }
+
+                        
 				}
 			}
 		}
