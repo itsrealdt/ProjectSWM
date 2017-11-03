@@ -23,7 +23,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         if (mTrackableBehaviour)
             mTrackableBehaviour.RegisterTrackableEventHandler(this);
 
-
+        ResetScaleRot();
         //initialScaleMoto = motoObject.transform.localScale;
     }
 
@@ -137,6 +137,11 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
         motoHolo.SetActive(true);
 
+        ResetScaleRot();
+    }
+
+    public void ResetScaleRot ()
+    {
         motoObject.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
         motoObject.transform.localRotation = new Quaternion(0f, 0f, 0f, 0f);
         motoObject.transform.Rotate(0f, -90f, 0f);
