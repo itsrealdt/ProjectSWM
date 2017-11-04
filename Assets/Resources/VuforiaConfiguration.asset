@@ -44,8 +44,10 @@ MonoBehaviour:
       ContainsMagnet: 0
   databaseLoad:
     dataSetsToLoad:
+    - MarkerEICMA5Stelle
     - Project_SWM
     dataSetsToActivate:
+    - MarkerEICMA5Stelle
     - Project_SWM
   videoBackground:
     clippingMode: 0

@@ -19,7 +19,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     private float xValue = 0f;
     private float yValue = -90f;
-    private float zValue = -90f;
+    private float zValue = 0f;
 
     //private Vector3 initialScaleMoto;
 
