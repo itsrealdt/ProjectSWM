@@ -55,9 +55,9 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         Scene scene = SceneManager.GetActiveScene();
 
         //if (scene.name == "Merge_02-11" || scene.name == "Merge_23-10")
-        //delLoadMarker(true);
+        delLoadMarker(true);
 
-        TrackingFound();
+        //TrackingFound();
     }
 
     protected virtual void OnTrackingLost()
@@ -69,7 +69,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         //    delDetectionMarker(DetectionLevel.Lost);
         //    TrackingLost();
         //}
-        //delDetectionMarker(DetectionLevel.Lost);
+        delDetectionMarker(DetectionLevel.Lost);
         TrackingLost();
     }
 
