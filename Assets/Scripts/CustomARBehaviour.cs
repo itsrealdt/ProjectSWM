@@ -34,7 +34,8 @@ public class CustomARBehaviour : MonoBehaviour
         {
             loadingIcon.GetComponent<UnityEngine.UI.Image>().fillAmount += .025f;
             SetTextDetectionMarker(DetectionLevel.Acquisition);
-            yield return null;
+            yield return new WaitForSeconds(Time.fixedDeltaTime);
+            //yield return null;
         }
         //Far partire qui il metodo OnTrackinFound()
         refDTEH.TrackingFound();

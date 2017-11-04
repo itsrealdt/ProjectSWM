@@ -15,6 +15,12 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     public GameObject motoHolo;
     public GameObject[] objectWithEffect;
 
+    public float scaleDev;
+
+    private float xValue = 0f;
+    private float yValue = -90f;
+    private float zValue = -90f;
+
     //private Vector3 initialScaleMoto;
 
     protected virtual void Start()
@@ -23,6 +29,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         if (mTrackableBehaviour)
             mTrackableBehaviour.RegisterTrackableEventHandler(this);
 
+        delDetectionMarker(DetectionLevel.Lost);
         ResetScaleRot();
         //initialScaleMoto = motoObject.transform.localScale;
     }
@@ -142,8 +149,31 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     public void ResetScaleRot ()
     {
-        motoObject.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
+        motoObject.transform.localScale = new Vector3(scaleDev, scaleDev, scaleDev);
         motoObject.transform.localRotation = new Quaternion(0f, 0f, 0f, 0f);
-        motoObject.transform.Rotate(0f, -90f, 0f);
+        motoObject.transform.Rotate(xValue, yValue, zValue);
     }
+
+    //public void Rotate45()
+    //{
+    //    xValue = 0f;
+    //    yValue = -90f;
+    //    zValue = -45f;
+    //}
+
+    //public void RotateOrizz()
+    //{
+    //    xValue = 0f;
+    //    yValue = -90f;
+    //    zValue = 0f;
+    //}
+
+    //public void RotateVert()
+    //{
+    //    xValue = 0f;
+    //    yValue = -90f;
+    //    zValue = -90f;
+    //}
+
+
 }

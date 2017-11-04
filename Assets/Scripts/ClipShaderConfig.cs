@@ -41,7 +41,7 @@ public class ClipShaderConfig : MonoBehaviour {
         while (elapsedTime < seconds)
         {
             pos = Vector3.Lerp(startPos, end, (elapsedTime / seconds));
-            elapsedTime += Time.deltaTime;
+            elapsedTime += Time.fixedDeltaTime;
             foreach (var _refMat in _M)
             {
                 _refMat.SetVector("_PlanePoint", pos);
