@@ -9,8 +9,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     protected TrackableBehaviour mTrackableBehaviour;
     public Action<bool> delLoadMarker;
     public Action<DetectionLevel> delDetectionMarker;
-    //public Button bSwitch;
-
+    public Action<bool> delStartEffect;
     public GameObject motoObject;
     public GameObject motoHolo;
     public GameObject[] objectWithEffect;
@@ -82,7 +81,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     public void TrackingFound()
     {
-        Debug.LogWarning("Sono dentro TrackingFound");
+        //Debug.LogWarning("Sono dentro TrackingFound");
 
         //bSwitch.interactable = true;
 
@@ -103,17 +102,18 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         foreach (var component in canvasComponents)
             component.enabled = true;
 
-        //Attiva l'effetto di apparizione 
-        for (int i = 0; i < objectWithEffect.Length; i++)
-        {
-            objectWithEffect[i].GetComponent<ClipShaderConfig>().ActivateEffect();
-        }
+        ////Attiva l'effetto di apparizione 
+        //for (int i = 0; i < objectWithEffect.Length; i++)
+        //{
+        //    objectWithEffect[i].GetComponent<ClipShaderConfig>().ActivateEffect();
+        //}
         motoHolo.SetActive(false);
+        delStartEffect(true);
     }
 
     public void TrackingLost()
     {
-        Debug.LogWarning("Sono dentro TrackingLost");
+        //Debug.LogWarning("Sono dentro TrackingLost");
 
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
@@ -136,14 +136,14 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         foreach (var component in canvasComponents)
             component.enabled = false;
 
-        //Resetta la x per resettare l'effetto di apparizione
-        for (int i = 0; i < objectWithEffect.Length; i++)
-        {
-            objectWithEffect[i].GetComponent<ClipShaderConfig>().ResetPos();
-        }
+        ////Resetta la x per resettare l'effetto di apparizione
+        //for (int i = 0; i < objectWithEffect.Length; i++)
+        //{
+        //    objectWithEffect[i].GetComponent<ClipShaderConfig>().ResetPos();
+        //}
 
         motoHolo.SetActive(true);
-
+        delStartEffect(false);
         ResetScaleRot();
     }
 
@@ -153,27 +153,4 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         motoObject.transform.localRotation = new Quaternion(0f, 0f, 0f, 0f);
         motoObject.transform.Rotate(xValue, yValue, zValue);
     }
-
-    //public void Rotate45()
-    //{
-    //    xValue = 0f;
-    //    yValue = -90f;
-    //    zValue = -45f;
-    //}
-
-    //public void RotateOrizz()
-    //{
-    //    xValue = 0f;
-    //    yValue = -90f;
-    //    zValue = 0f;
-    //}
-
-    //public void RotateVert()
-    //{
-    //    xValue = 0f;
-    //    yValue = -90f;
-    //    zValue = -90f;
-    //}
-
-
 }
