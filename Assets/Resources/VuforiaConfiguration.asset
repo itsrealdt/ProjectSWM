@@ -44,9 +44,11 @@ MonoBehaviour:
       ContainsMagnet: 0
   databaseLoad:
     dataSetsToLoad:
+    - ItsReal
     - MarkerEICMA5Stelle
     - Project_SWM
     dataSetsToActivate:
+    - ItsReal
     - MarkerEICMA5Stelle
     - Project_SWM
   videoBackground:
