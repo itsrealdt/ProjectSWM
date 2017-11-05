@@ -22,13 +22,11 @@ public class CustomARBehaviour : MonoBehaviour
 
     private void LoadMarker(bool _on)
     {
-        Debug.LogWarning("Sono dentro LoadMarker");
         StartCoroutine(LoadMarkerCO());
     }
 
     private IEnumerator LoadMarkerCO()
     {
-        Debug.LogWarning("Sono dentro LoadMarkerCO");
 
         while (loadingIcon.GetComponent<UnityEngine.UI.Image>().fillAmount < 1)
         {
@@ -45,7 +43,7 @@ public class CustomARBehaviour : MonoBehaviour
 
     public void SetTextDetectionMarker(DetectionLevel _detectionLevel)
     {
-        Debug.LogWarning("Sono dentro SetTextDetectionMarker");
+        //Debug.LogWarning("Sono dentro SetTextDetectionMarker");
 
         switch (_detectionLevel)
         {

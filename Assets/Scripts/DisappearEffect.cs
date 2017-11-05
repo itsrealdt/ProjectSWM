@@ -7,11 +7,21 @@ public class DisappearEffect : MonoBehaviour
     private Vector3 initialPos;
     private DefaultTrackableEventHandler refDTEH;
     private float zAxis;
+    private bool isColliding = true;
 
     private void Awake()
     {
         refDTEH = FindObjectOfType<DefaultTrackableEventHandler>();
         refDTEH.delStartEffect = StartDisappearEffect;
+    }
+
+    public void OnTriggerExit(Collider other)
+    {
+        if (other.name != this.gameObject.name)
+        {
+            isColliding = false;
+            Debug.LogWarning("Sono fuori dall collider");
+        }
     }
 
     public void StartDisappearEffect(bool _on)
@@ -30,21 +40,22 @@ public class DisappearEffect : MonoBehaviour
     public void ResetInitialPos()
     {
         this.transform.localPosition = initialPos;
-        Debug.Log("Posizione del ClipPlane resettata");
+        isColliding = true;
         Debug.LogWarning(initialPos);
     }
 
 
     IEnumerator DisappearEffectCO()
     {
-        initialPos = this.transform.localPosition;
+        initialPos = new Vector3(0, 0, -1.1f);
 
-        while (true)//this.transform.forward != initialTrans.forward *2)
+        while (isColliding)
         {
-            zAxis = -0.5f;
-            //this.gameObject.transform.right += new Vector3(1f, 0f, 0f);
-            this.gameObject.transform.position += new Vector3(zAxis, 0, 0); //new Vector3(0f, 0f, 1f);
+            zAxis = 0.01f;
+            this.gameObject.transform.localPosition += new Vector3(0, 0, zAxis); //new Vector3(0f, 0f, 1f);
             yield return null;
         }
     }
+
+
 }
