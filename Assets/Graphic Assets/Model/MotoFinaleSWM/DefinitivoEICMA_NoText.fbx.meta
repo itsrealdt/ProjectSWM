@@ -27,6 +27,14 @@ ModelImporter:
     100038: Struttura_pezzo_2_low
     100040: Struttura_pezzo_3_low
     100042: Struttura_tubi_low
+    100044: DA_SISTEMARE_DIETRO
+    100046: Exhaust_system_low
+    100048: Fuel_system_parte_1_low
+    100050: Fuel_system_parte_2_low
+    100052: Instrument_panel_low
+    100054: Radiatore_low
+    100056: Ruota_cerchione_avanti_low
+    100058: Ruota_cerchione_dietro_low
     400000: Ammortizzatore_avanti_parte_1_low
     400002: Ammortizzatore_avanti_parte_2_low
     400004: Carena_low
@@ -49,6 +57,14 @@ ModelImporter:
     400038: Struttura_pezzo_2_low
     400040: Struttura_pezzo_3_low
     400042: Struttura_tubi_low
+    400044: DA_SISTEMARE_DIETRO
+    400046: Exhaust_system_low
+    400048: Fuel_system_parte_1_low
+    400050: Fuel_system_parte_2_low
+    400052: Instrument_panel_low
+    400054: Radiatore_low
+    400056: Ruota_cerchione_avanti_low
+    400058: Ruota_cerchione_dietro_low
     2300000: Ammortizzatore_avanti_parte_1_low
     2300002: Ammortizzatore_avanti_parte_2_low
     2300004: Carena_low
@@ -70,6 +86,14 @@ ModelImporter:
     2300036: Struttura_pezzo_2_low
     2300038: Struttura_pezzo_3_low
     2300040: Struttura_tubi_low
+    2300042: DA_SISTEMARE_DIETRO
+    2300044: Exhaust_system_low
+    2300046: Fuel_system_parte_1_low
+    2300048: Fuel_system_parte_2_low
+    2300050: Instrument_panel_low
+    2300052: Radiatore_low
+    2300054: Ruota_cerchione_avanti_low
+    2300056: Ruota_cerchione_dietro_low
     3300000: Ammortizzatore_avanti_parte_1_low
     3300002: Ammortizzatore_avanti_parte_2_low
     3300004: Carena_low
@@ -91,6 +115,14 @@ ModelImporter:
     3300036: Struttura_pezzo_2_low
     3300038: Struttura_pezzo_3_low
     3300040: Struttura_tubi_low
+    3300042: DA_SISTEMARE_DIETRO
+    3300044: Exhaust_system_low
+    3300046: Fuel_system_parte_1_low
+    3300048: Fuel_system_parte_2_low
+    3300050: Instrument_panel_low
+    3300052: Radiatore_low
+    3300054: Ruota_cerchione_avanti_low
+    3300056: Ruota_cerchione_dietro_low
     4300000: Struttura_tubi_low
     4300002: Struttura_pezzo_0_low
     4300004: Struttura_pezzo_1_low
@@ -112,6 +144,14 @@ ModelImporter:
     4300036: Freni_parte_2_low
     4300038: Ruote_cerchioni_e_raggi_low
     4300040: Carena_low
+    4300042: Radiatore_low
+    4300044: Exhaust_system_low
+    4300046: Instrument_panel_low
+    4300048: Ruota_cerchione_dietro_low
+    4300050: Ruota_cerchione_avanti_low
+    4300052: Fuel_system_parte_1_low
+    4300054: Fuel_system_parte_2_low
+    4300056: DA_SISTEMARE_DIETRO
     9500000: //RootNode
   externalObjects:
   - first:
