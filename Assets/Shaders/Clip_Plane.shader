@@ -1,10 +1,10 @@
 ﻿
 // clips any pixel on the wrong side of a plane
 
-Shader "Custom/Clip_Plane" {
+Shader "CLIP/Clip_Plane" {
     Properties {
     
-      _PlanePoint ("Plane Point (Local Space)", Vector) = (0,0,0,0)
+      _PlanePoint ("Plane Point (World Space)", Vector) = (0,0,0,0)
       _PlaneNormal ("Plane Normal (World Space)", Vector) = (1,0,0,0)
       
 	  _MainTex ("Main Texture", 2D) = "white" {}
@@ -53,7 +53,7 @@ Shader "Custom/Clip_Plane" {
       void surf (Input IN, inout SurfaceOutputStandard o) {
       
          //clip (frac((IN.worldPos.y+IN.worldPos.z*0.1) * 5) - 0.5);
-         // clip ( distance( IN.worldPos, _Point) - _Distance);
+         //clip ( distance( IN.worldPos, _Point) - _Distance);
          
          _PlaneNormal = normalize(_PlaneNormal);
           

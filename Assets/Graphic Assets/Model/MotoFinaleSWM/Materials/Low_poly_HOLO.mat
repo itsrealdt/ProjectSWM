@@ -6,9 +6,9 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Low_poly
-  m_Shader: {fileID: 4800000, guid: 9b90b7b1947ea5a4fac15322b92cba40, type: 3}
-  m_ShaderKeywords: CLIP_ONE
+  m_Name: Low_poly_HOLO
+  m_Shader: {fileID: 4800000, guid: 29fed12d8547e354e90be987488147c1, type: 3}
+  m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -42,6 +42,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _FlickerTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -58,24 +62,31 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _SpecGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _Alpha: 1
+    - _Brightness: 3
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EdgeDistance: 0.5
     - _EdgeEmission: 0.5
+    - _FlickerSpeed: 1
+    - _Fold: 1
+    - _GlitchIntensity: 0
+    - _GlitchSpeed: 1
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
+    - _GlowSpeed: 1
+    - _GlowTiling: 0.05
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _RimPower: 5
+    - _ScanSpeed: 1
+    - _ScanTiling: 0.05
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -85,12 +96,7 @@ Material:
     - _Color: {r: 0.048093993, g: 0.048093993, b: 0.278, a: 1}
     - _EdgeColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+    - _MainColor: {r: 1, g: 1, b: 1, a: 1}
     - _PlaneNormal: {r: 1, g: 0, b: 0, a: 0}
-    - _PlanePoint: {r: 187.3, g: 0, b: 0, a: 0}
-    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
-    - _planeNorm: {r: 0.9999999, g: 0.00000011920929, b: 0, a: 0}
-    - _planeNorm2: {r: 0, g: 1, b: 0, a: 1}
-    - _planeNorm3: {r: 0, g: 1, b: 0, a: 1}
-    - _planePos: {r: 206, g: 30.25, b: -22.799995, a: 0}
-    - _planePos2: {r: 0, g: 0, b: 0, a: 1}
-    - _planePos3: {r: 0, g: 0, b: 0, a: 1}
+    - _PlanePoint: {r: 187.28, g: 0, b: 0, a: 0}
+    - _RimColor: {r: 1, g: 1, b: 1, a: 1}

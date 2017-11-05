@@ -23,7 +23,7 @@ public class ClipShaderConfig : MonoBehaviour {
 
     public void ActivateEffect()
     {
-        StartCoroutine(MoveOverSeconds(endPos, moveSeconds));
+        //StartCoroutine(MoveOverSeconds(endPos, moveSeconds));
     }
 
     public void ResetPos()
