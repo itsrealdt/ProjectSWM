@@ -1,10 +1,10 @@
 using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 
 [ExecuteInEditMode]
-public class ClippableObject : MonoBehaviour {
-
+public class ClippableObject : MonoBehaviour
+{
     //only 3 clip planes for now, will need to modify the shader for more.
     [Range(0, 3)]
     public int clipPlanes = 0;
@@ -24,21 +24,31 @@ public class ClippableObject : MonoBehaviour {
 
     public GameObject clipPlane;
 
-    public void OnEnable() {
+    public List<Material> _M = new List<Material>();
+
+    public void OnEnable()
+    {
         //let's just create a new material instance.
-        GetComponent<MeshRenderer>().sharedMaterial = new Material(Shader.Find("CLIP/StandardClippable")) {
-            hideFlags = HideFlags.HideAndDontSave
-        };
+        _M.AddRange(GetComponent<Renderer>().sharedMaterials);
+        //foreach (var mat in _M)
+        //{
+        //    mat = new Material(Shader.Find("CLIP/StandardClippable"))
+        //    {
+        //        hideFlags = HideFlags.HideAndDontSave
+        //    };
+        //}      
     }
 
-    public void Start() {
+    public void Start()
+    {
         plane1Position = clipPlane.transform.localPosition;
         plane1Rotation = clipPlane.transform.localEulerAngles;
     }
 
 
     //Only used for previewing a plane. Draws diagonals and edges of a limited flat plane.
-    private void DrawPlane(Vector3 position, Vector3 euler) {
+    private void DrawPlane(Vector3 position, Vector3 euler)
+    {
         var forward = Quaternion.Euler(euler) * Vector3.forward;
         var left = Quaternion.Euler(euler) * Vector3.left;
 
@@ -58,14 +68,18 @@ public class ClippableObject : MonoBehaviour {
         Gizmos.DrawLine(backLeft, forwardLeft);
     }
 
-    private void OnDrawGizmosSelected() {
-        if (clipPlanes >= 1) {
+    private void OnDrawGizmosSelected()
+    {
+        if (clipPlanes >= 1)
+        {
             DrawPlane(plane1Position, plane1Rotation);
         }
-        if (clipPlanes >= 2) {
+        if (clipPlanes >= 2)
+        {
             DrawPlane(plane2Position, plane2Rotation);
         }
-        if (clipPlanes >= 3) {
+        if (clipPlanes >= 3)
+        {
             DrawPlane(plane3Position, plane3Rotation);
         }
     }
@@ -73,52 +87,56 @@ public class ClippableObject : MonoBehaviour {
     //Ideally the planes do not need to be updated every frame, but we'll just keep the logic here for simplicity purposes.
     public void Update()
     {
-        var sharedMaterial = GetComponent<MeshRenderer>().sharedMaterial;
-        plane1Position = clipPlane.transform.position;
-        plane1Rotation = clipPlane.transform.eulerAngles;
-        //Only should enable one keyword. If you want to enable any one of them, you actually need to disable the others. 
-        //This may be a bug...
-        switch (clipPlanes) {
-            case 0:
-                sharedMaterial.DisableKeyword("CLIP_ONE");
-                sharedMaterial.DisableKeyword("CLIP_TWO");
-                sharedMaterial.DisableKeyword("CLIP_THREE");
-                break;
-            case 1:
-                sharedMaterial.EnableKeyword("CLIP_ONE");
-                sharedMaterial.DisableKeyword("CLIP_TWO");
-                sharedMaterial.DisableKeyword("CLIP_THREE");
-                break;
-            case 2:
-                sharedMaterial.DisableKeyword("CLIP_ONE");
-                sharedMaterial.EnableKeyword("CLIP_TWO");
-                sharedMaterial.DisableKeyword("CLIP_THREE");
-                break;
-            case 3:
-                sharedMaterial.DisableKeyword("CLIP_ONE");
-                sharedMaterial.DisableKeyword("CLIP_TWO");
-                sharedMaterial.EnableKeyword("CLIP_THREE");
-                break;
-        }
-
-        //pass the planes to the shader if necessary.
-        if (clipPlanes >= 1)
+        foreach (var sharedMaterial in _M)
         {
-            sharedMaterial.SetVector("_planePos", plane1Position);
-            //plane normal vector is the rotated 'up' vector.
-            sharedMaterial.SetVector("_planeNorm", Quaternion.Euler(plane1Rotation) * Vector3.up);
-        }
+            //var sharedMaterial = GetComponent<MeshRenderer>().sharedMaterial;
+            plane1Position = clipPlane.transform.position;
+            plane1Rotation = clipPlane.transform.eulerAngles;
+            //Only should enable one keyword. If you want to enable any one of them, you actually need to disable the others. 
+            //This may be a bug...
+            switch (clipPlanes)
+            {
+                case 0:
+                    sharedMaterial.DisableKeyword("CLIP_ONE");
+                    sharedMaterial.DisableKeyword("CLIP_TWO");
+                    sharedMaterial.DisableKeyword("CLIP_THREE");
+                    break;
+                case 1:
+                    sharedMaterial.EnableKeyword("CLIP_ONE");
+                    sharedMaterial.DisableKeyword("CLIP_TWO");
+                    sharedMaterial.DisableKeyword("CLIP_THREE");
+                    break;
+                case 2:
+                    sharedMaterial.DisableKeyword("CLIP_ONE");
+                    sharedMaterial.EnableKeyword("CLIP_TWO");
+                    sharedMaterial.DisableKeyword("CLIP_THREE");
+                    break;
+                case 3:
+                    sharedMaterial.DisableKeyword("CLIP_ONE");
+                    sharedMaterial.DisableKeyword("CLIP_TWO");
+                    sharedMaterial.EnableKeyword("CLIP_THREE");
+                    break;
+            }
 
-        if (clipPlanes >= 2)
-        {
-            sharedMaterial.SetVector("_planePos2", plane2Position);
-            sharedMaterial.SetVector("_planeNorm2", Quaternion.Euler(plane2Rotation) * Vector3.up);
-        }
+            //pass the planes to the shader if necessary.
+            if (clipPlanes >= 1)
+            {
+                sharedMaterial.SetVector("_planePos", plane1Position);
+                //plane normal vector is the rotated 'up' vector.
+                sharedMaterial.SetVector("_planeNorm", Quaternion.Euler(plane1Rotation) * Vector3.up);
+            }
 
-        if (clipPlanes >= 3)
-        {
-            sharedMaterial.SetVector("_planePos3", plane3Position);
-            sharedMaterial.SetVector("_planeNorm3", Quaternion.Euler(plane3Rotation) * Vector3.up);
+            if (clipPlanes >= 2)
+            {
+                sharedMaterial.SetVector("_planePos2", plane2Position);
+                sharedMaterial.SetVector("_planeNorm2", Quaternion.Euler(plane2Rotation) * Vector3.up);
+            }
+
+            if (clipPlanes >= 3)
+            {
+                sharedMaterial.SetVector("_planePos3", plane3Position);
+                sharedMaterial.SetVector("_planeNorm3", Quaternion.Euler(plane3Rotation) * Vector3.up);
+            }
         }
     }
 }
