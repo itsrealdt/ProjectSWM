@@ -74,9 +74,9 @@ Material:
     m_Colors:
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
-    - _planeNorm: {r: 0.9999999, g: 0.00000011920929, b: 0, a: 0}
+    - _planeNorm: {r: 0.9999603, g: 0.008726795, b: -0.0017102247, a: 0}
     - _planeNorm2: {r: 0, g: 1, b: 0, a: 1}
     - _planeNorm3: {r: 0, g: 1, b: 0, a: 1}
-    - _planePos: {r: 322.05902, g: 76.5, b: 22.200024, a: 0}
+    - _planePos: {r: 246.07509, g: -52.917213, b: -14.012203, a: 0}
     - _planePos2: {r: 0, g: 0, b: 0, a: 1}
     - _planePos3: {r: 0, g: 0, b: 0, a: 1}

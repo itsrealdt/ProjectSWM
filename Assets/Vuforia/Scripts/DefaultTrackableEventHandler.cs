@@ -16,9 +16,9 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     public float scaleDev;
 
-    private float xValue = 0f;
+    private float xValue = 0.5f;
     private float yValue = -90f;
-    private float zValue = 0f;
+    private float zValue = -90.5f;
 
     //private Vector3 initialScaleMoto;
 
@@ -105,7 +105,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         //{
         //    objectWithEffect[i].GetComponent<ClipShaderConfig>().ActivateEffect();
         //}
-        motoHolo.SetActive(false);
+        //motoHolo.SetActive(false);
         delStartEffect(true);
     }
 
@@ -140,7 +140,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         //    objectWithEffect[i].GetComponent<ClipShaderConfig>().ResetPos();
         //}
 
-        motoHolo.SetActive(true);
+        //motoHolo.SetActive(true);
         delStartEffect(false);
         ResetScaleRot();
     }
