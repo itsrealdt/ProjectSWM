@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/FinalScene_Def_Misure.unity
-    guid: 1fe15c7561ca37546b3cfab5df5ba48a
-  - enabled: 1
     path: Assets/Scenes/FinalScene_Def_Vert.unity
     guid: 261b2d74a89dfb84295b8e487e4eda2d
+  - enabled: 1
+    path: Assets/Scenes/FinalScene_Def_Vert_Touch.unity
+    guid: 21948ee8de46f3846b84cb64688b61b7

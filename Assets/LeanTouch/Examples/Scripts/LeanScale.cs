@@ -81,12 +81,12 @@ namespace Lean.Touch
 				else
 				{
                     // Grow the local scale by scale
-                    if (scale > 1 && this.gameObject.transform.localScale.x < 2)
+                    if (scale > 1 && this.gameObject.transform.localScale.x < 2.2)
                     {
                         Debug.Log("scale: " + scale);
                         transform.localScale *= scale;
                     }
-                    else if (scale < 1 && this.gameObject.transform.localScale.x > 1)
+                    else if (scale < 1 && this.gameObject.transform.localScale.x > 1.7)
                     {
                         transform.localScale *= scale;
                     }
