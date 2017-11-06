@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public enum DetectionLevel
@@ -43,8 +42,6 @@ public class CustomARBehaviour : MonoBehaviour
 
     public void SetTextDetectionMarker(DetectionLevel _detectionLevel)
     {
-        //Debug.LogWarning("Sono dentro SetTextDetectionMarker");
-
         switch (_detectionLevel)
         {
             case DetectionLevel.Acquisition:

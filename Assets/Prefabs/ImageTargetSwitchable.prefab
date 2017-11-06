@@ -5358,10 +5358,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a73a4f6cb46975b4d91008a1a32004f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToMove: {fileID: 0}
-  motoHolo: {fileID: 0}
+  motoObject: {fileID: 0}
   objectWithEffect: []
-  effect: 0
+  scaleDev: 0
 --- !u!114 &114808398656914596
 MonoBehaviour:
   m_ObjectHideFlags: 1

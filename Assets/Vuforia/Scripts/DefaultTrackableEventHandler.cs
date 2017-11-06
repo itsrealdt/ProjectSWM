@@ -11,7 +11,6 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     public Action<DetectionLevel> delDetectionMarker;
     public Action<bool> delStartEffect;
     public GameObject motoObject;
-    public GameObject motoHolo;
     public GameObject[] objectWithEffect;
 
     public float scaleDev;
@@ -28,7 +27,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         if (mTrackableBehaviour)
             mTrackableBehaviour.RegisterTrackableEventHandler(this);
 
-        delDetectionMarker(DetectionLevel.Lost);
+        //delDetectionMarker(DetectionLevel.Lost);
         ResetScaleRot();
         //initialScaleMoto = motoObject.transform.localScale;
     }
@@ -52,7 +51,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             // Call OnTrackingLost() to hide the augmentations
             
             //COMMENTATO PER FARE DELLE PROVE!!! CAUSA UN ERRORE ALL'AVVIO!!!
-            //OnTrackingLost();
+            OnTrackingLost();
         }
     }
 
@@ -79,14 +78,9 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     public void TrackingFound()
     {
-        //Debug.LogWarning("Sono dentro TrackingFound");
-
-        //bSwitch.interactable = true;
-
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
-        //CameraDevice.Instance.SetFlashTorchMode(true); //inserito il comando di attivazione del flash
 
         // Enable rendering:
         foreach (var component in rendererComponents)
@@ -100,27 +94,14 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         foreach (var component in canvasComponents)
             component.enabled = true;
 
-        ////Attiva l'effetto di apparizione 
-        //for (int i = 0; i < objectWithEffect.Length; i++)
-        //{
-        //    objectWithEffect[i].GetComponent<ClipShaderConfig>().ActivateEffect();
-        //}
-        //motoHolo.SetActive(false);
         delStartEffect(true);
     }
 
     public void TrackingLost()
     {
-        //Debug.LogWarning("Sono dentro TrackingLost");
-
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
-
-        //CameraDevice.Instance.SetFlashTorchMode(true); //inserito il comando di attivazione del flash
-
-        //MotoEnabler motoElements = FindObjectOfType<MotoEnabler>();
-        //motoElements.OnThisTrackingLost();
 
         // Disable rendering:
         foreach (var component in rendererComponents)
@@ -134,13 +115,6 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         foreach (var component in canvasComponents)
             component.enabled = false;
 
-        ////Resetta la x per resettare l'effetto di apparizione
-        //for (int i = 0; i < objectWithEffect.Length; i++)
-        //{
-        //    objectWithEffect[i].GetComponent<ClipShaderConfig>().ResetPos();
-        //}
-
-        //motoHolo.SetActive(true);
         delStartEffect(false);
         ResetScaleRot();
     }
