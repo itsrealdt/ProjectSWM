@@ -1,0 +1,77 @@
+Lambert SG10 : Vetro
+	Usare texture base color (forse va bene anche a risoluzione 256x256).
+	Settare opacità 92% (quindi molto opaca ma lievemente traslucida).
+	Roughness 0,22.
+	Metallic 0,22.
+	No Heightmap.
+	Normal map 2K.
+
+Lambert 11SG: Grigio scuro
+	Base color: 75 75 75.
+	Roughness 0,39.
+	Metallic 0,51.
+	No Heightmap.
+	Normal map 2K.
+
+Lambert 12SG: Sellino
+	Base color: 4 3 3.
+	Usare texture roughness 2048x2048.
+	Metallic 0.
+	Usare Heightmap a 2048x2048.
+	Normal map 2K.
+
+Lambert 14SG: Acciaio
+	Base color: 109 109 109.
+	Roughness 0,78.
+	Metallic 0,82.
+	No Heightmap.
+	Normal map 2K.
+
+Lambert 15SG: Pneumatico
+	Usare texture base color 2048x2048.
+	Usare texture roughness 2048x2048.
+	Metallic 0,22.
+	No Heightmap.
+	Normal map 2K.
+
+Lambert 16SG: Cerchione
+	Base color: 19 17 17.
+	Roughness 0,17.
+	Metallic 0,88.
+	No Heightmap.
+	Normal map 2K.
+
+Lambert 17SG: Grigio chiaro
+	Base color: 121 121 121.
+	Roughness 0,39.
+	Metallic 0,51.
+	No Heightmap.
+	No Normal.
+
+Lambert 18SG: Acciaio due
+	Base color: 156 156 156
+	Roughness 0,67.
+	Metallic 0,78.
+	No Heightmap.
+	Normal map 2K.
+
+Lambert 19SG: Metallo motore
+	Base color: 62 62 62
+	Roughness 0,66.
+	Metallic 0,98.
+	No Heightmap.
+	Normal map 2K.
+
+Lambert 7SG: Rosso
+	Base color: 224 29 29
+	Roughness 0,50.
+	Metallic 0,50.
+	No Heightmap.
+	Normal map 2K.
+
+Lambert 9SG: Bianco
+	Base color: 213 213 213
+	Roughness 0,40.
+	Metallic 0,49.
+	No Heightmap.
+	Normal map 2K.

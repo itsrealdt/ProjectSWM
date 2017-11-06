@@ -1,0 +1,348 @@
+fileFormatVersion: 2
+guid: 076e3541ce705e24199406833567d43d
+timeCreated: 1509808859
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Ammortizzatore_avanti_parte_1_low
+    100002: Ammortizzatore_avanti_parte_2_low
+    100004: Carena_low
+    100006: Comando_destro_low
+    100008: Comando_sinistro_low
+    100010: //RootNode
+    100012: Freni_parte_1_low
+    100014: Freni_parte_2_low
+    100016: Freni_parte_3_low
+    100018: Motore_parte_1_low
+    100020: Motore_parte_2_low
+    100022: Motore_parte_3_low
+    100024: Motore_parte_4_low
+    100026: Motore_parte_5_low
+    100028: Motore_parte_7_low
+    100030: Ruote_cerchioni_e_raggi_low
+    100032: Ruote_copertoni_low
+    100034: Struttura_pezzo_0_low
+    100036: Struttura_pezzo_1_low
+    100038: Struttura_pezzo_2_low
+    100040: Struttura_pezzo_3_low
+    100042: Struttura_tubi_low
+    100044: DA_SISTEMARE_DIETRO
+    100046: Exhaust_system_low
+    100048: Fuel_system_parte_1_low
+    100050: Fuel_system_parte_2_low
+    100052: Instrument_panel_low
+    100054: Radiatore_low
+    100056: Ruota_cerchione_avanti_low
+    100058: Ruota_cerchione_dietro_low
+    100060: Ammortizzatore_posteriore_molla_low
+    100062: Ammortizzatore_posteriore_parte_1_low
+    100064: Ammortizzatore_posteriore_parte_2_low
+    100066: Ammortizzatore_posteriore_parte_3_low
+    100068: Freni_parte_4_low
+    100070: Freni_parte_5_low
+    100072: Handlebar_controls_parte_1_low
+    100074: Handlebar_controls_parte_2_low
+    100076: Handlebar_controls_parte_3_low
+    100078: Maniglie_freni_low
+    100080: Parafango_posteriore_low
+    400000: Ammortizzatore_avanti_parte_1_low
+    400002: Ammortizzatore_avanti_parte_2_low
+    400004: Carena_low
+    400006: Comando_destro_low
+    400008: Comando_sinistro_low
+    400010: //RootNode
+    400012: Freni_parte_1_low
+    400014: Freni_parte_2_low
+    400016: Freni_parte_3_low
+    400018: Motore_parte_1_low
+    400020: Motore_parte_2_low
+    400022: Motore_parte_3_low
+    400024: Motore_parte_4_low
+    400026: Motore_parte_5_low
+    400028: Motore_parte_7_low
+    400030: Ruote_cerchioni_e_raggi_low
+    400032: Ruote_copertoni_low
+    400034: Struttura_pezzo_0_low
+    400036: Struttura_pezzo_1_low
+    400038: Struttura_pezzo_2_low
+    400040: Struttura_pezzo_3_low
+    400042: Struttura_tubi_low
+    400044: DA_SISTEMARE_DIETRO
+    400046: Exhaust_system_low
+    400048: Fuel_system_parte_1_low
+    400050: Fuel_system_parte_2_low
+    400052: Instrument_panel_low
+    400054: Radiatore_low
+    400056: Ruota_cerchione_avanti_low
+    400058: Ruota_cerchione_dietro_low
+    400060: Ammortizzatore_posteriore_molla_low
+    400062: Ammortizzatore_posteriore_parte_1_low
+    400064: Ammortizzatore_posteriore_parte_2_low
+    400066: Ammortizzatore_posteriore_parte_3_low
+    400068: Freni_parte_4_low
+    400070: Freni_parte_5_low
+    400072: Handlebar_controls_parte_1_low
+    400074: Handlebar_controls_parte_2_low
+    400076: Handlebar_controls_parte_3_low
+    400078: Maniglie_freni_low
+    400080: Parafango_posteriore_low
+    2300000: Ammortizzatore_avanti_parte_1_low
+    2300002: Ammortizzatore_avanti_parte_2_low
+    2300004: Carena_low
+    2300006: Comando_destro_low
+    2300008: Comando_sinistro_low
+    2300010: Freni_parte_1_low
+    2300012: Freni_parte_2_low
+    2300014: Freni_parte_3_low
+    2300016: Motore_parte_1_low
+    2300018: Motore_parte_2_low
+    2300020: Motore_parte_3_low
+    2300022: Motore_parte_4_low
+    2300024: Motore_parte_5_low
+    2300026: Motore_parte_7_low
+    2300028: Ruote_cerchioni_e_raggi_low
+    2300030: Ruote_copertoni_low
+    2300032: Struttura_pezzo_0_low
+    2300034: Struttura_pezzo_1_low
+    2300036: Struttura_pezzo_2_low
+    2300038: Struttura_pezzo_3_low
+    2300040: Struttura_tubi_low
+    2300042: DA_SISTEMARE_DIETRO
+    2300044: Exhaust_system_low
+    2300046: Fuel_system_parte_1_low
+    2300048: Fuel_system_parte_2_low
+    2300050: Instrument_panel_low
+    2300052: Radiatore_low
+    2300054: Ruota_cerchione_avanti_low
+    2300056: Ruota_cerchione_dietro_low
+    2300058: Ammortizzatore_posteriore_molla_low
+    2300060: Ammortizzatore_posteriore_parte_1_low
+    2300062: Ammortizzatore_posteriore_parte_2_low
+    2300064: Ammortizzatore_posteriore_parte_3_low
+    2300066: Freni_parte_4_low
+    2300068: Freni_parte_5_low
+    2300070: Handlebar_controls_parte_1_low
+    2300072: Handlebar_controls_parte_2_low
+    2300074: Handlebar_controls_parte_3_low
+    2300076: Maniglie_freni_low
+    2300078: Parafango_posteriore_low
+    3300000: Ammortizzatore_avanti_parte_1_low
+    3300002: Ammortizzatore_avanti_parte_2_low
+    3300004: Carena_low
+    3300006: Comando_destro_low
+    3300008: Comando_sinistro_low
+    3300010: Freni_parte_1_low
+    3300012: Freni_parte_2_low
+    3300014: Freni_parte_3_low
+    3300016: Motore_parte_1_low
+    3300018: Motore_parte_2_low
+    3300020: Motore_parte_3_low
+    3300022: Motore_parte_4_low
+    3300024: Motore_parte_5_low
+    3300026: Motore_parte_7_low
+    3300028: Ruote_cerchioni_e_raggi_low
+    3300030: Ruote_copertoni_low
+    3300032: Struttura_pezzo_0_low
+    3300034: Struttura_pezzo_1_low
+    3300036: Struttura_pezzo_2_low
+    3300038: Struttura_pezzo_3_low
+    3300040: Struttura_tubi_low
+    3300042: DA_SISTEMARE_DIETRO
+    3300044: Exhaust_system_low
+    3300046: Fuel_system_parte_1_low
+    3300048: Fuel_system_parte_2_low
+    3300050: Instrument_panel_low
+    3300052: Radiatore_low
+    3300054: Ruota_cerchione_avanti_low
+    3300056: Ruota_cerchione_dietro_low
+    3300058: Ammortizzatore_posteriore_molla_low
+    3300060: Ammortizzatore_posteriore_parte_1_low
+    3300062: Ammortizzatore_posteriore_parte_2_low
+    3300064: Ammortizzatore_posteriore_parte_3_low
+    3300066: Freni_parte_4_low
+    3300068: Freni_parte_5_low
+    3300070: Handlebar_controls_parte_1_low
+    3300072: Handlebar_controls_parte_2_low
+    3300074: Handlebar_controls_parte_3_low
+    3300076: Maniglie_freni_low
+    3300078: Parafango_posteriore_low
+    4300000: Struttura_tubi_low
+    4300002: Struttura_pezzo_0_low
+    4300004: Struttura_pezzo_1_low
+    4300006: Struttura_pezzo_2_low
+    4300008: Struttura_pezzo_3_low
+    4300010: Motore_parte_2_low
+    4300012: Motore_parte_5_low
+    4300014: Motore_parte_7_low
+    4300016: Motore_parte_4_low
+    4300018: Motore_parte_3_low
+    4300020: Motore_parte_1_low
+    4300022: Ammortizzatore_avanti_parte_2_low
+    4300024: Ammortizzatore_avanti_parte_1_low
+    4300026: Comando_destro_low
+    4300028: Ruote_copertoni_low
+    4300030: Comando_sinistro_low
+    4300032: Freni_parte_3_low
+    4300034: Freni_parte_1_low
+    4300036: Freni_parte_2_low
+    4300038: Ruote_cerchioni_e_raggi_low
+    4300040: Carena_low
+    4300042: Radiatore_low
+    4300044: Exhaust_system_low
+    4300046: Instrument_panel_low
+    4300048: Ruota_cerchione_dietro_low
+    4300050: Ruota_cerchione_avanti_low
+    4300052: Fuel_system_parte_1_low
+    4300054: Fuel_system_parte_2_low
+    4300056: DA_SISTEMARE_DIETRO
+    4300058: Ammortizzatore_posteriore_parte_1_low
+    4300060: Ammortizzatore_posteriore_parte_2_low
+    4300062: Ammortizzatore_posteriore_parte_3_low
+    4300064: Ammortizzatore_posteriore_molla_low
+    4300066: Freni_parte_4_low
+    4300068: Freni_parte_5_low
+    4300070: Handlebar_controls_parte_1_low
+    4300072: Handlebar_controls_parte_2_low
+    4300074: Handlebar_controls_parte_3_low
+    4300076: Maniglie_freni_low
+    4300078: Parafango_posteriore_low
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Definitivo_Acciaio
+    second: {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Definitivo_AcciaioDue
+    second: {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Definitivo_Bianco
+    second: {fileID: 2100000, guid: 783c392ad1146274ea4b82e3fbf79ca9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Definitivo_Cerchione
+    second: {fileID: 2100000, guid: 25e4bacf7d8f9104ba3abb26dca5e7f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Definitivo_GrigioChiaro
+    second: {fileID: 2100000, guid: 2ae6e0a500d527f4aae4ee6b17bcc58d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Definitivo_GrigioScuro
+    second: {fileID: 2100000, guid: f00cd0e0d59c0954ea8be0cdf1f2c7a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Definitivo_MetalloMotore
+    second: {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Definitivo_Pneumatico
+    second: {fileID: 2100000, guid: 89bdd152be53a714e8e1e09e0f584666, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Definitivo_Rosso
+    second: {fileID: 2100000, guid: d863e4777369117488c774d73b3061d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Definitivo_Sellino
+    second: {fileID: 2100000, guid: dee76c89c0b2e7d44ac3895b7af269c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Definitivo_Vetro
+    second: {fileID: 2100000, guid: 2ab6c8966be9f0848b3d039ce29b50ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Low_poly
+    second: {fileID: 2100000, guid: b6dc5d39637d6c44c8a63fd91a85ba3a, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
