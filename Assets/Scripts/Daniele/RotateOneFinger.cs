@@ -6,7 +6,7 @@ public class RotateOneFinger : MonoBehaviour {
 
 
     
-    private float _sensitivity = 0.5f;
+    public float _sensitivity = 0.5f;
     private Vector3 _mouseReference;
     private Vector3 _mouseOffset;
     private Vector3 _rotation = Vector3.zero;
