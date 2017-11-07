@@ -9072,31 +9072,46 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224385275185545004, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a,
+    - target: {fileID: 224492232471830152, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1673.0105
+      value: -1605.4427
       objectReference: {fileID: 0}
     - target: {fileID: 224066065543078242, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1594.0105
+      value: -1463.4427
       objectReference: {fileID: 0}
-    - target: {fileID: 224492232471830152, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a,
+    - target: {fileID: 224385275185545004, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1736.0105
+      value: -1542.4427
+      objectReference: {fileID: 0}
+    - target: {fileID: 224329663970484492, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -780.00006
+      objectReference: {fileID: 0}
+    - target: {fileID: 224329663970484492, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1619.4928
+      objectReference: {fileID: 0}
+    - target: {fileID: 224370597395937506, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 801.1998
+      objectReference: {fileID: 0}
+    - target: {fileID: 224370597395937506, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1610.8428
       objectReference: {fileID: 0}
     - target: {fileID: 114892366488586646, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 57258337}
-    - target: {fileID: 114892366488586646, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ResetInitialPos
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a, type: 2}
   m_IsPrefabParent: 0
