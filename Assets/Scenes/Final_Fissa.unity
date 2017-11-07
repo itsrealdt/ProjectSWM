@@ -38,12 +38,12 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -143,7 +143,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 57258332}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -0, z: -1.1}
+  m_LocalPosition: {x: -0, y: 0, z: 0.916}
   m_LocalScale: {x: 0.18000071, y: 0.1800008, z: 0.1800007}
   m_Children: []
   m_Father: {fileID: 634072158}
@@ -170,95 +170,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1532139252569158, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a,
     type: 2}
   m_PrefabInternal: {fileID: 835921370}
---- !u!1 &163690660
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 163690661}
-  - component: {fileID: 163690663}
-  - component: {fileID: 163690662}
-  - component: {fileID: 163690664}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &163690661
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 163690660}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1973393149}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &163690662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 163690660}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 967f773bd8693f74bb31116f6e21c823, type: 3}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 70
-    m_Alignment: 4
-    m_AlignByGeometry: 1
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: ATTIVA AR
---- !u!222 &163690663
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 163690660}
---- !u!114 &163690664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 163690660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
-  m_EffectDistance: {x: 2, y: -2}
-  m_UseGraphicAlpha: 1
 --- !u!43 &284135436
 Mesh:
   m_ObjectHideFlags: 0
@@ -779,7 +690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -787,6 +698,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
@@ -1072,7 +986,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -1080,6 +994,15 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
+  - {fileID: 2100000, guid: 2ab6c8966be9f0848b3d039ce29b50ff, type: 2}
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
+  - {fileID: 2100000, guid: 2ab6c8966be9f0848b3d039ce29b50ff, type: 2}
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
+  - {fileID: 2100000, guid: 2ab6c8966be9f0848b3d039ce29b50ff, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
   - {fileID: 2100000, guid: 2ab6c8966be9f0848b3d039ce29b50ff, type: 2}
@@ -1909,7 +1832,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -1917,6 +1840,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
@@ -2202,7 +2128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -2210,6 +2136,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
@@ -2495,7 +2424,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -2503,6 +2432,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
@@ -2788,7 +2720,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -2796,6 +2728,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 89bdd152be53a714e8e1e09e0f584666, type: 2}
+  - {fileID: 2100000, guid: 89bdd152be53a714e8e1e09e0f584666, type: 2}
+  - {fileID: 2100000, guid: 89bdd152be53a714e8e1e09e0f584666, type: 2}
   - {fileID: 2100000, guid: 89bdd152be53a714e8e1e09e0f584666, type: 2}
   - {fileID: 2100000, guid: 89bdd152be53a714e8e1e09e0f584666, type: 2}
   - {fileID: 2100000, guid: 89bdd152be53a714e8e1e09e0f584666, type: 2}
@@ -3081,7 +3016,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -3089,6 +3024,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 25e4bacf7d8f9104ba3abb26dca5e7f6, type: 2}
+  - {fileID: 2100000, guid: 25e4bacf7d8f9104ba3abb26dca5e7f6, type: 2}
+  - {fileID: 2100000, guid: 25e4bacf7d8f9104ba3abb26dca5e7f6, type: 2}
   - {fileID: 2100000, guid: 25e4bacf7d8f9104ba3abb26dca5e7f6, type: 2}
   - {fileID: 2100000, guid: 25e4bacf7d8f9104ba3abb26dca5e7f6, type: 2}
   - {fileID: 2100000, guid: 25e4bacf7d8f9104ba3abb26dca5e7f6, type: 2}
@@ -3374,7 +3312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -3382,6 +3320,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 25e4bacf7d8f9104ba3abb26dca5e7f6, type: 2}
+  - {fileID: 2100000, guid: 25e4bacf7d8f9104ba3abb26dca5e7f6, type: 2}
+  - {fileID: 2100000, guid: 25e4bacf7d8f9104ba3abb26dca5e7f6, type: 2}
   - {fileID: 2100000, guid: 25e4bacf7d8f9104ba3abb26dca5e7f6, type: 2}
   - {fileID: 2100000, guid: 25e4bacf7d8f9104ba3abb26dca5e7f6, type: 2}
   - {fileID: 2100000, guid: 25e4bacf7d8f9104ba3abb26dca5e7f6, type: 2}
@@ -3667,7 +3608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -3675,6 +3616,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
   - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
   - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
   - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
@@ -3960,7 +3904,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -3968,6 +3912,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: f00cd0e0d59c0954ea8be0cdf1f2c7a3, type: 2}
+  - {fileID: 2100000, guid: f00cd0e0d59c0954ea8be0cdf1f2c7a3, type: 2}
+  - {fileID: 2100000, guid: f00cd0e0d59c0954ea8be0cdf1f2c7a3, type: 2}
   - {fileID: 2100000, guid: f00cd0e0d59c0954ea8be0cdf1f2c7a3, type: 2}
   - {fileID: 2100000, guid: f00cd0e0d59c0954ea8be0cdf1f2c7a3, type: 2}
   - {fileID: 2100000, guid: f00cd0e0d59c0954ea8be0cdf1f2c7a3, type: 2}
@@ -4253,7 +4200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -4261,6 +4208,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
   - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
   - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
   - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
@@ -4546,7 +4496,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -4554,6 +4504,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
   - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
   - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
   - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
@@ -4839,7 +4792,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -4847,6 +4800,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
   - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
   - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
   - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
@@ -5132,7 +5088,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -5140,6 +5096,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
   - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
   - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
   - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
@@ -5425,7 +5384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -5433,6 +5392,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
   - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
   - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
   - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
@@ -5718,7 +5680,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -5726,6 +5688,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
   - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
   - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
   - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
@@ -6011,7 +5976,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -6019,6 +5984,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
   - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
   - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
   - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
@@ -6304,7 +6272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -6312,6 +6280,12 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
   - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
   - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
   - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
@@ -6869,7 +6843,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -6877,6 +6851,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
@@ -7162,7 +7139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -7170,6 +7147,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
@@ -7455,7 +7435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -7463,6 +7443,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
@@ -7748,7 +7731,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -7756,6 +7739,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
   - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
   - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
   - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
@@ -8041,7 +8027,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -8049,6 +8035,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
+  - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
   - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
   - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
   - {fileID: 2100000, guid: 39658e228a33c3c48836d13feaffd0ed, type: 2}
@@ -8334,7 +8323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -8342,6 +8331,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
   - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
   - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
   - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
@@ -8627,7 +8619,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -8635,6 +8627,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
   - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
   - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
   - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
@@ -8920,7 +8915,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -8928,6 +8923,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
   - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
   - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
   - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
@@ -9213,7 +9211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -9221,6 +9219,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
   - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
   - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
   - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
@@ -9506,7 +9507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -9514,6 +9515,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
   - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
   - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
   - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
@@ -9799,7 +9803,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -9807,6 +9811,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
@@ -10092,7 +10099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -10100,6 +10107,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 89bdd152be53a714e8e1e09e0f584666, type: 2}
+  - {fileID: 2100000, guid: 89bdd152be53a714e8e1e09e0f584666, type: 2}
+  - {fileID: 2100000, guid: 89bdd152be53a714e8e1e09e0f584666, type: 2}
   - {fileID: 2100000, guid: 89bdd152be53a714e8e1e09e0f584666, type: 2}
   - {fileID: 2100000, guid: 89bdd152be53a714e8e1e09e0f584666, type: 2}
   - {fileID: 2100000, guid: 89bdd152be53a714e8e1e09e0f584666, type: 2}
@@ -10385,7 +10395,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -10393,6 +10403,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 89bdd152be53a714e8e1e09e0f584666, type: 2}
+  - {fileID: 2100000, guid: 89bdd152be53a714e8e1e09e0f584666, type: 2}
+  - {fileID: 2100000, guid: 89bdd152be53a714e8e1e09e0f584666, type: 2}
   - {fileID: 2100000, guid: 89bdd152be53a714e8e1e09e0f584666, type: 2}
   - {fileID: 2100000, guid: 89bdd152be53a714e8e1e09e0f584666, type: 2}
   - {fileID: 2100000, guid: 89bdd152be53a714e8e1e09e0f584666, type: 2}
@@ -10678,7 +10691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -10686,6 +10699,27 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: f00cd0e0d59c0954ea8be0cdf1f2c7a3, type: 2}
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
+  - {fileID: 2100000, guid: 783c392ad1146274ea4b82e3fbf79ca9, type: 2}
+  - {fileID: 2100000, guid: dee76c89c0b2e7d44ac3895b7af269c8, type: 2}
+  - {fileID: 2100000, guid: 2ae6e0a500d527f4aae4ee6b17bcc58d, type: 2}
+  - {fileID: 2100000, guid: d863e4777369117488c774d73b3061d0, type: 2}
+  - {fileID: 2100000, guid: 2ab6c8966be9f0848b3d039ce29b50ff, type: 2}
+  - {fileID: 2100000, guid: f00cd0e0d59c0954ea8be0cdf1f2c7a3, type: 2}
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
+  - {fileID: 2100000, guid: 783c392ad1146274ea4b82e3fbf79ca9, type: 2}
+  - {fileID: 2100000, guid: dee76c89c0b2e7d44ac3895b7af269c8, type: 2}
+  - {fileID: 2100000, guid: 2ae6e0a500d527f4aae4ee6b17bcc58d, type: 2}
+  - {fileID: 2100000, guid: d863e4777369117488c774d73b3061d0, type: 2}
+  - {fileID: 2100000, guid: 2ab6c8966be9f0848b3d039ce29b50ff, type: 2}
+  - {fileID: 2100000, guid: f00cd0e0d59c0954ea8be0cdf1f2c7a3, type: 2}
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
+  - {fileID: 2100000, guid: 783c392ad1146274ea4b82e3fbf79ca9, type: 2}
+  - {fileID: 2100000, guid: dee76c89c0b2e7d44ac3895b7af269c8, type: 2}
+  - {fileID: 2100000, guid: 2ae6e0a500d527f4aae4ee6b17bcc58d, type: 2}
+  - {fileID: 2100000, guid: d863e4777369117488c774d73b3061d0, type: 2}
+  - {fileID: 2100000, guid: 2ab6c8966be9f0848b3d039ce29b50ff, type: 2}
   - {fileID: 2100000, guid: f00cd0e0d59c0954ea8be0cdf1f2c7a3, type: 2}
   - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
   - {fileID: 2100000, guid: 783c392ad1146274ea4b82e3fbf79ca9, type: 2}
@@ -12603,7 +12637,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -12611,6 +12645,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
@@ -12896,7 +12933,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -12904,6 +12941,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
@@ -13189,7 +13229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -13197,6 +13237,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
@@ -13482,7 +13525,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -13490,6 +13533,9 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
+  - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
   - {fileID: 2100000, guid: 884826ff199d579448c63696bda3b1b6, type: 2}
@@ -13775,7 +13821,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -13783,6 +13829,12 @@ MonoBehaviour:
   plane3Rotation: {x: 0, y: 0, z: 90}
   clipPlane: {fileID: 57258332}
   _M:
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
+  - {fileID: 2100000, guid: 25e4bacf7d8f9104ba3abb26dca5e7f6, type: 2}
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
+  - {fileID: 2100000, guid: 25e4bacf7d8f9104ba3abb26dca5e7f6, type: 2}
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
+  - {fileID: 2100000, guid: 25e4bacf7d8f9104ba3abb26dca5e7f6, type: 2}
   - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
   - {fileID: 2100000, guid: 25e4bacf7d8f9104ba3abb26dca5e7f6, type: 2}
   - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
@@ -14340,7 +14392,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipPlanes: 1
   planePreviewSize: 5
-  plane1Position: {x: 259.49457, y: -58.800102, z: -18.035152}
+  plane1Position: {x: 7.504524, y: -60.999195, z: -17.604187}
   plane1Rotation: {x: 0.4999769, y: 0.10235584, z: 270.50003}
   plane2Position: {x: 0, y: 0, z: 0}
   plane2Rotation: {x: 0, y: 90, z: 90}
@@ -14620,11 +14672,9 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
   - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
   - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
---- !u!224 &777051168 stripped
-RectTransform:
-  m_PrefabParentObject: {fileID: 224672371068123678, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a,
-    type: 2}
-  m_PrefabInternal: {fileID: 835921370}
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
+  - {fileID: 2100000, guid: 809753ab1b4cd0044b8d6b84649886c1, type: 2}
 --- !u!1 &812488341
 GameObject:
   m_ObjectHideFlags: 0
@@ -14700,12 +14750,12 @@ Prefab:
     - target: {fileID: 224672371068123678, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 960
+      value: 270
       objectReference: {fileID: 0}
     - target: {fileID: 224672371068123678, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 540
+      value: 152
       objectReference: {fileID: 0}
     - target: {fileID: 224672371068123678, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a,
         type: 2}
@@ -14787,26 +14837,51 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224385275185545004, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a,
+    - target: {fileID: 224492232471830152, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: -409.44446
+      value: -1605.4427
       objectReference: {fileID: 0}
     - target: {fileID: 224066065543078242, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: -330.44446
+      value: -1463.4427
       objectReference: {fileID: 0}
-    - target: {fileID: 224492232471830152, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a,
+    - target: {fileID: 224385275185545004, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: -472.44446
+      value: -1542.4427
       objectReference: {fileID: 0}
-    - target: {fileID: 114969082621658928, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a,
+    - target: {fileID: 224329663970484492, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a,
         type: 2}
-      propertyPath: m_Text
-      value: DETECTION MARKER TEXT
+      propertyPath: m_LocalPosition.x
+      value: -780.00006
       objectReference: {fileID: 0}
+    - target: {fileID: 224329663970484492, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1619.4928
+      objectReference: {fileID: 0}
+    - target: {fileID: 114318506660623778, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 849265694}
+    - target: {fileID: 224370597395937506, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 801.1998
+      objectReference: {fileID: 0}
+    - target: {fileID: 224370597395937506, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1610.8428
+      objectReference: {fileID: 0}
+    - target: {fileID: 114892366488586646, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 57258337}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1958ec4cf18a6ff4d8d57c95ea9eff2a, type: 2}
   m_IsPrefabParent: 0
@@ -15041,80 +15116,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1326220989
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1326220990}
-  - component: {fileID: 1326220992}
-  - component: {fileID: 1326220991}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1326220990
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1326220989}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1826648226}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1326220991
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1326220989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 967f773bd8693f74bb31116f6e21c823, type: 3}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 70
-    m_Alignment: 4
-    m_AlignByGeometry: 1
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: TASTO RESET
---- !u!222 &1326220992
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1326220989}
 --- !u!21 &1352768858
 Material:
   serializedVersion: 6
@@ -15140,270 +15141,3 @@ Material:
     m_Floats: []
     m_Colors:
     - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
---- !u!1 &1826648225
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1826648226}
-  - component: {fileID: 1826648229}
-  - component: {fileID: 1826648228}
-  - component: {fileID: 1826648227}
-  m_Layer: 5
-  m_Name: Antipanic Button
-  m_TagString: ResetButton
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1826648226
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1826648225}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -780, y: 486.05005, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1326220990}
-  m_Father: {fileID: 777051168}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 180, y: -53.94995}
-  m_SizeDelta: {x: 360, y: 107.9}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1826648227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1826648225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1826648228}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 849265694}
-        m_MethodName: ResetScene
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!114 &1826648228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1826648225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1826648229
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1826648225}
---- !u!1 &1973393148
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1973393149}
-  - component: {fileID: 1973393152}
-  - component: {fileID: 1973393151}
-  - component: {fileID: 1973393150}
-  - component: {fileID: 1973393153}
-  m_Layer: 5
-  m_Name: Reload AR Button
-  m_TagString: ResetButton
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1973393149
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1973393148}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 801.19995, y: 477.4, z: 0}
-  m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
-  m_Children:
-  - {fileID: 163690661}
-  m_Father: {fileID: 777051168}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1761.2, y: -62.6}
-  m_SizeDelta: {x: 283.7, y: 85}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1973393150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1973393148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1973393151}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 57258337}
-        m_MethodName: ResetInitialPos
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1973393153}
-        m_MethodName: ResetAttivaAR
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!114 &1973393151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1973393148}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.043137256, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 74b5a7fdb342e024485af1e44c6efefe, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1973393152
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1973393148}
---- !u!114 &1973393153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1973393148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d8a643bb31e47047b2d03afce71562f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
