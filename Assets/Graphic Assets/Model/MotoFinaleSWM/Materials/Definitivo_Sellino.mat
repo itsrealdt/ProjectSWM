@@ -60,7 +60,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0
+    - _Glossiness: 0.15
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
@@ -72,11 +72,11 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.015686275, g: 0.011764706, b: 0.011764706, a: 1}
+    - _Color: {r: 0.003921569, g: 0.003921569, b: 0.003921569, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
     - _planeNorm: {r: 0.9999603, g: 0.008726795, b: -0.0017102247, a: 0}
     - _planeNorm2: {r: 0, g: 1, b: 0, a: 1}
     - _planeNorm3: {r: 0, g: 1, b: 0, a: 1}
-    - _planePos: {r: 259.49457, g: -58.800102, b: -18.035152, a: 0}
+    - _planePos: {r: 243.3953, g: -59.532898, b: -26.349195, a: 0}
     - _planePos2: {r: 0, g: 0, b: 0, a: 1}
     - _planePos3: {r: 0, g: 0, b: 0, a: 1}

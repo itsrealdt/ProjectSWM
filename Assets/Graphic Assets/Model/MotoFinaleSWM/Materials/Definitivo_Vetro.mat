@@ -8,12 +8,13 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: Definitivo_Vetro
   m_Shader: {fileID: 4800000, guid: 9b90b7b1947ea5a4fac15322b92cba40, type: 3}
-  m_ShaderKeywords: CLIP_ONE _NORMALMAP
+  m_ShaderKeywords: CLIP_ONE _ALPHAPREMULTIPLY_ON _NORMALMAP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    RenderType: Transparent
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -56,27 +57,27 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
-    - _Cutoff: 0.129
+    - _Cutoff: 0.144
     - _DetailNormalMapScale: 1
-    - _DstBlend: 0
+    - _DstBlend: 10
     - _GlossMapScale: 1
-    - _Glossiness: 0.78
+    - _Glossiness: 0
     - _GlossyReflections: 1
-    - _Metallic: 0.22
-    - _Mode: 0
+    - _Metallic: 0.26
+    - _Mode: 3
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _ZWrite: 1
+    - _ZWrite: 0
     m_Colors:
-    - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _Color: {r: 0.9632353, g: 0.99156576, b: 0.99156576, a: 0.884}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
     - _planeNorm: {r: 0.9999603, g: 0.008726795, b: -0.0017102247, a: 0}
     - _planeNorm2: {r: 0, g: 1, b: 0, a: 1}
     - _planeNorm3: {r: 0, g: 1, b: 0, a: 1}
-    - _planePos: {r: 259.49457, g: -58.800102, b: -18.035152, a: 0}
+    - _planePos: {r: 243.3953, g: -59.532898, b: -26.349195, a: 0}
     - _planePos2: {r: 0, g: 0, b: 0, a: 1}
     - _planePos3: {r: 0, g: 0, b: 0, a: 1}
