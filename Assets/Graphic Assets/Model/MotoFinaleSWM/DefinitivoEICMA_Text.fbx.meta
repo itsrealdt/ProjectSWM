@@ -46,6 +46,7 @@ ModelImporter:
     100076: Handlebar_controls_parte_3_low
     100078: Maniglie_freni_low
     100080: Parafango_posteriore_low
+    100082: Muro_per_luce
     400000: Ammortizzatore_avanti_parte_1_low
     400002: Ammortizzatore_avanti_parte_2_low
     400004: Carena_low
@@ -87,6 +88,7 @@ ModelImporter:
     400076: Handlebar_controls_parte_3_low
     400078: Maniglie_freni_low
     400080: Parafango_posteriore_low
+    400082: Muro_per_luce
     2300000: Ammortizzatore_avanti_parte_1_low
     2300002: Ammortizzatore_avanti_parte_2_low
     2300004: Carena_low
@@ -127,6 +129,7 @@ ModelImporter:
     2300074: Handlebar_controls_parte_3_low
     2300076: Maniglie_freni_low
     2300078: Parafango_posteriore_low
+    2300080: Muro_per_luce
     3300000: Ammortizzatore_avanti_parte_1_low
     3300002: Ammortizzatore_avanti_parte_2_low
     3300004: Carena_low
@@ -167,6 +170,7 @@ ModelImporter:
     3300074: Handlebar_controls_parte_3_low
     3300076: Maniglie_freni_low
     3300078: Parafango_posteriore_low
+    3300080: Muro_per_luce
     4300000: Struttura_tubi_low
     4300002: Struttura_pezzo_0_low
     4300004: Struttura_pezzo_1_low
@@ -207,6 +211,7 @@ ModelImporter:
     4300074: Handlebar_controls_parte_3_low
     4300076: Maniglie_freni_low
     4300078: Parafango_posteriore_low
+    4300080: Muro_per_luce
     9500000: //RootNode
   externalObjects:
   - first:
