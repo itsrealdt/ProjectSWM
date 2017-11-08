@@ -123,7 +123,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.0
+  bundleVersion: 1.1
   preloadedAssets: []
   metroInputSource: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -150,7 +150,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.ITSREAL.SWMAR
   buildNumber: {}
-  AndroidBundleVersionCode: 1
+  AndroidBundleVersionCode: 2
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
@@ -224,7 +224,7 @@ PlayerSettings:
   AndroidTargetDevice: 3
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: D:/PROGETTI UNITY 5/ProjectSWM/KEYSTORE/swmarkey.keystore
+  AndroidKeystoreName: C:/Users/David/Desktop/Project SWM/KEYSTORE/swmarkey.keystore
   AndroidKeyaliasName: swmarkey
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
