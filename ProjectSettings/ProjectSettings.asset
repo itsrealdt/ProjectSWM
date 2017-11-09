@@ -224,7 +224,7 @@ PlayerSettings:
   AndroidTargetDevice: 3
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/Users/David/Desktop/Project SWM/KEYSTORE/swmarkey.keystore
+  AndroidKeystoreName: C:/Users/Design/Desktop/Project SWM Repo/KEYSTORE/swmarkey.keystore
   AndroidKeyaliasName: swmarkey
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
