@@ -44,9 +44,9 @@ MonoBehaviour:
       ContainsMagnet: 0
   databaseLoad:
     dataSetsToLoad:
-    - MarkerEICMA5Stelle
+    - ItsReal
     dataSetsToActivate:
-    - MarkerEICMA5Stelle
+    - ItsReal
   videoBackground:
     clippingMode: 0
     numDivisions: 2

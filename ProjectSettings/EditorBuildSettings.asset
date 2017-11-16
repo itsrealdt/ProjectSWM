@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/Final_TouchORIGINAL.unity
+    guid: 21948ee8de46f3846b84cb64688b61b7
   - enabled: 1
     path: Assets/Scenes/Final_Touch.unity
-    guid: 21948ee8de46f3846b84cb64688b61b7
+    guid: be06fb3323b2ed8449d9657e1492ad34
   - enabled: 0
     path: Assets/Scenes/Final_Fissa.unity
     guid: 261b2d74a89dfb84295b8e487e4eda2d
